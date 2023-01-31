@@ -64,14 +64,6 @@
                             <a href="#" class="text-decoration-none text-index">Đăng ký / Đăng nhập</a>
                         </h6>
                     </div>
-
-                    <!-- <div class="col-12 col-lg-8 col-md-6">
-                        <div class="float-end">
-                            <h6 class="text-white float-start small pe-2">
-                                <a href="#" class="text-decoration-none text-index">Đăng ký / Đăng nhập</a>
-                            </h6>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -96,9 +88,10 @@
                     </div>
 
                     <div class="col-4 col-lg-3 col-md-2 mt-3 mt-lg-2">
-                        <button class="btn float-end"><i class="bi bi-basket2-fill fs-2 text-index"></i>
-                            <span class="translate-middle badge rounded-pill bg-secondary">+0
-                                <span class="visually-hidden">unread cart</span></span></button>
+                        <button class="btn float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-basket2-fill fs-2 text-index"></i>
+                            <span class="badge text-bg-secondary rounded-5">+0</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -207,97 +200,58 @@
 
     <section id="content1">
         <div class="bg-index p-3 text-center mb-5 shadow">
-            <h2 class="text-white">Sản phẩm bán chạy</h2>
+            <h2 class="text-white">Combo tiết kiệm</h2>
         </div>
 
         <div class="container pt-0 pb-4">
             <div class="row text-center">
                 <div class="col-12 col-lg-3 col-md-6 pb-4">
-                    <div class="card shadow">
+                    <div class="card h-100 shadow">
                         <img src="./images/best-seller/friedchicken.jpg" class="card-img-top" alt="...">
                         <div class="card-body border-bottom border-3 rounded border-index">
                             <h5 class="card-title text-index">Combo 3 miếng gà cay</h5>
-                            <h6 class="card-title pt-2 pb-3">109,000 VND</h6>
-                            <a href="#" class="btn btn-index">Đặt món ngay</a>
+                            <h6 class="card-title text-muted small pt-2">3 miếng gà cay tuỳ chọn <br> (không xương/bình
+                                thường)
+                            </h6>
+                            <h6 class="card-title text-index fw-bold pt-2 pb-3">109,000 VND</h6>
+                            <a href="#" class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-lg-3 col-md-6 pb-4">
-                    <div class="card shadow">
-                        <img src="./images/best-seller/hotdog.jpg" class="card-img-top" alt="...">
-                        <div class="card-body border-bottom border-3 rounded border-index">
-                            <h5 class="card-title text-index">Combo 3 Hotdog</h5>
-                            <h6 class="card-title pt-2 pb-3">99,000 VND</h6>
-                            <a href="#" class="btn btn-index">Đặt món ngay</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-3 col-md-6 pb-4">
-                    <div class="card shadow">
-                        <img src="./images/best-seller/hambuger.jpg" class="card-img-top" alt="...">
-                        <div class="card-body border-bottom border-3 rounded border-index">
-                            <h5 class="card-title text-index">Hambuger bò phô mai</h5>
-                            <h6 class="card-title pt-2 pb-3">59,000 VND</h6>
-                            <a href="#" class="btn btn-index">Đặt món ngay</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-3 col-md-6 pb-4">
-                    <div class="card shadow">
-                        <img src="./images/best-seller/potatoes.jpg" class="card-img-top" alt="...">
-                        <div class="card-body border-bottom border-3 rounded border-index">
-                            <h5 class="card-title text-index">Khoai tây chiên size M</h5>
-                            <h6 class="card-title pt-2 pb-3">39,000 VND</h6>
-                            <a href="#" class="btn btn-index">Đặt món ngay</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row text-center">
-                <div class="col-12 col-lg-3 col-md-6 pb-4">
-                    <div class="card shadow">
-                        <img src="./images/best-seller/sandwich.jpg" class="card-img-top" alt="...">
-                        <div class="card-body border-bottom border-3 rounded border-index">
-                            <h5 class="card-title text-index">Sandwich rau củ</h5>
-                            <h6 class="card-title pt-2 pb-3">49,000 VND</h6>
-                            <a href="#" class="btn btn-index">Đặt món ngay</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-3 col-md-6 pb-4">
-                    <div class="card shadow">
-                        <img src="./images/best-seller/friedchicken-2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body border-bottom border-3 rounded border-index">
-                            <h5 class="card-title text-index">Combo 3 gà sốt mắm</h5>
-                            <h6 class="card-title pt-2 pb-3">149,000 VND</h6>
-                            <a href="#" class="btn btn-index">Đặt món ngay</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-3 col-md-6 pb-4">
-                    <div class="card shadow">
+                    <div class="card h-100 shadow">
                         <img src="./images/best-seller/friedchicken-3.jpg" class="card-img-top" alt="...">
                         <div class="card-body border-bottom border-3 rounded border-index">
                             <h5 class="card-title text-index">Combo gà + khoai tây</h5>
-                            <h6 class="card-title pt-2 pb-3">129,000 VND</h6>
-                            <a href="#" class="btn btn-index">Đặt món ngay</a>
+                            <h6 class="card-title text-muted small pt-2">2 miếng gà sốt mắm <br> Khoai tây size S</h6>
+                            <h6 class="card-title text-index fw-bold pt-2 pb-3">129,000 VND</h6>
+                            <a href="#" class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-3 col-md-6">
-                    <div class="card shadow">
-                        <img src="./images/best-seller/orangejuice.jpg" class="card-img-top" alt="...">
+                <div class="col-12 col-lg-3 col-md-6 pb-4">
+                    <div class="card h-100 shadow">
+                        <img src="./images/best-seller/friedchicken-2.jpg" class="card-img-top" alt="...">
                         <div class="card-body border-bottom border-3 rounded border-index">
-                            <h5 class="card-title text-index">Nước ép cam cà rốt</h5>
-                            <h6 class="card-title pt-2 pb-3">29,000 VND</h6>
-                            <a href="#" class="btn btn-index">Đặt món ngay</a>
+                            <h5 class="card-title text-index">Combo 3 gà sốt mắm</h5>
+                            <h6 class="card-title text-muted small pt-2">3 miếng gà sốt mắm tuỳ chọn <br> (không
+                                xương/bình thường)</h6>
+                            <h6 class="card-title text-index fw-bold pt-2 pb-3">139,000 VND</h6>
+                            <a href="#" class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-6 pb-4">
+                    <div class="card h-100 shadow">
+                        <img src="./images/best-seller/hotdog.jpg" class="card-img-top" alt="...">
+                        <div class="card-body border-bottom border-3 rounded border-index">
+                            <h5 class="card-title text-index">Combo 2 Hotdog</h5>
+                            <h6 class="card-title text-muted small pt-2">Hotdog xúc xích <br> Hotdog rau củ</h6>
+                            <h6 class="card-title text-index fw-bold pt-2 pb-3">69,000 VND</h6>
+                            <a href="#" class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
                         </div>
                     </div>
                 </div>
@@ -375,6 +329,27 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Giỏ hàng</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-index">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
     <script type="text/javascript">
         $(document).ready(function () {
             var defaults = {
