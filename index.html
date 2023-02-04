@@ -327,11 +327,54 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-5 position-relative">
+                            <label for="productName" class="form-label">Tên sản phẩm</label>
+                            <input type="text" class="form-control" id="productName" value="Combo 3 miếng gà cay"
+                                readonly disabled required>
+                        </div>
+                        <div class="col-md-4 position-relative">
+                            <label for="productPrice" class="form-label">Đơn giá</label>
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="productPrice"
+                                    aria-describedby="validationProductPrice" value="109,000" readonly required>
+                                <span class="input-group-text" id="validationProductPrice">VND</span>
+                                <div class="invalid-tooltip">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 position-relative">
+                            <label for="productQuantity" class="form-label">Số lượng</label>
+                            <input type="number" class="form-control" id="validationTooltipUsername"
+                                aria-describedby="productQuantity" value="1" required>
+                        </div>
+                        <div class="col-md-6 position-relative">
+                            <label for="productStore" class="form-label">Chọn cửa hàng</label>
+                            <select class="form-select" id="productStore" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-tooltip">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-6 position-relative">
+                            <label for="productNote" class="form-label">Ghi chú</label>
+                            <input type="text" class="form-control" id="productNote" required>
+                            <div class="invalid-tooltip">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    <div class="col-md-12 text-end">
+                        <label for="productNote" class="form-label">Thành tiền: 109,000 VND</label>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                    <button type="button" class="btn btn-index">Thanh toán</button>
+                    <button type="submit" class="btn btn-index">Thanh toán</button>
                 </div>
             </div>
         </div>
