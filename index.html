@@ -32,7 +32,7 @@
         <div class="overflow-hidden">
             <div class="bg-index2 container-fluid">
                 <div class="row pt-1">
-                    <div class="col-12 col-lg-6 col-md-6 mt-1">
+                    <div class="col-12 col-lg-6 col-md-8 mt-1">
                         <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: ''; margin-bottom: -15px;">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item small">
@@ -53,7 +53,7 @@
                         </nav>
                     </div>
 
-                    <div class="col-12 col-lg-6 col-md-6 mt-1">
+                    <div class="col-12 col-lg-6 col-md-4 mt-1">
                         <h6 class="text-white float-start small pe-2 float-end">
                             <a href="#" class="text-decoration-none text-index">Đăng ký / Đăng nhập</a>
                         </h6>
@@ -84,7 +84,7 @@
                     <div class="col-4 col-lg-3 col-md-2 mt-3 mt-lg-2">
                         <button class="btn float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <i class="bi bi-basket2-fill fs-2 text-index"></i>
-                            <span class="badge text-bg-secondary rounded-5">+0</span>
+                            <span class="badge text-bg-secondary rounded-5">+2</span>
                         </button>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                         <ul class="navbar-nav fw-semibold">
                             <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="#">Trang
+                                <a class="nav-link active text-white" aria-current="page" href="index.html">Trang
                                     chủ</a>
                             </li>
                             <li class="nav-item dropdown">
@@ -208,7 +208,7 @@
                                 thường)
                             </h6>
                             <h6 class="card-title text-index fw-bold pt-2 pb-3">109,000 VND</h6>
-                            <a href="#" class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
+                            <a class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
                         </div>
                     </div>
                 </div>
@@ -220,7 +220,7 @@
                             <h5 class="card-title text-index">Combo gà + khoai tây</h5>
                             <h6 class="card-title text-muted small pt-2">2 miếng gà sốt mắm <br> Khoai tây size S</h6>
                             <h6 class="card-title text-index fw-bold pt-2 pb-3">129,000 VND</h6>
-                            <a href="#" class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
+                            <a class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
                         </div>
                     </div>
                 </div>
@@ -233,7 +233,7 @@
                             <h6 class="card-title text-muted small pt-2">3 miếng gà sốt mắm tuỳ chọn <br> (không
                                 xương/bình thường)</h6>
                             <h6 class="card-title text-index fw-bold pt-2 pb-3">139,000 VND</h6>
-                            <a href="#" class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
+                            <a class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
                         </div>
                     </div>
                 </div>
@@ -245,7 +245,7 @@
                             <h5 class="card-title text-index">Combo 2 Hotdog</h5>
                             <h6 class="card-title text-muted small pt-2">Hotdog xúc xích <br> Hotdog rau củ</h6>
                             <h6 class="card-title text-index fw-bold pt-2 pb-3">69,000 VND</h6>
-                            <a href="#" class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
+                            <a class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
                         </div>
                     </div>
                 </div>
@@ -327,49 +327,90 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form class="row g-3 needs-validation" novalidate>
-                        <div class="col-md-5 position-relative">
+                    <!-- Form check product -->
+                    <form class="row g-3 needs-validation" validate>
+                        <div class="col-lg-1 d-none d-lg-block position-relative">
+                            <label for="#" class="form-label"></label>
+                            <button type="button" class="btn text-danger fs-4">
+                                <i class="bi bi-x-circle-fill"></i>
+                            </button>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-12 position-relative">
+                            <img src="./images/best-seller/friedchicken.jpg" class="img-fluid rounded-5" alt="">
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-5 position-relative">
                             <label for="productName" class="form-label">Tên sản phẩm</label>
                             <input type="text" class="form-control" id="productName" value="Combo 3 miếng gà cay"
                                 readonly disabled required>
                         </div>
-                        <div class="col-md-4 position-relative">
+                        <div class="col-6 col-lg-1 col-md-2 position-relative">
+                            <label for="productQuantity" class="form-label">SL</label>
+                            <input type="number" class="form-control" id="validationTooltipUsername"
+                                aria-describedby="productQuantity" value="1" required>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-5 position-relative">
                             <label for="productPrice" class="form-label">Đơn giá</label>
                             <div class="input-group has-validation">
                                 <input type="text" class="form-control" id="productPrice"
                                     aria-describedby="validationProductPrice" value="109,000" readonly required>
                                 <span class="input-group-text" id="validationProductPrice">VND</span>
                                 <div class="invalid-tooltip">
-
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 position-relative">
-                            <label for="productQuantity" class="form-label">Số lượng</label>
+                        <div class="col-12 d-block d-md-block d-lg-none text-center position-relative">
+                            <label for="#" class="form-label"></label>
+                            <button type="button" class="btn text-danger fs-3">
+                                <i class="bi bi-x-circle-fill"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <!-- End Form check product -->
+
+                    <hr>
+
+                    <!-- Form check product -->
+                    <form class="row g-3 needs-validation" validate>
+                        <div class="col-lg-1 d-none d-lg-block position-relative">
+                            <label for="#" class="form-label"></label>
+                            <button type="button" class="btn text-danger fs-4">
+                                <i class="bi bi-x-circle-fill"></i>
+                            </button>
+                        </div>
+                        <div class="col-12 col-lg-3 position-relative">
+                            <img src="./images/best-seller/hotdog.jpg" class="img-fluid rounded-5" alt="">
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-5 position-relative">
+                            <label for="productName" class="form-label">Tên sản phẩm</label>
+                            <input type="text" class="form-control" id="productName" value="Combo 2 Hotdog" readonly
+                                disabled required>
+                        </div>
+                        <div class="col-6 col-lg-1 col-md-2 position-relative">
+                            <label for="productQuantity" class="form-label">SL</label>
                             <input type="number" class="form-control" id="validationTooltipUsername"
                                 aria-describedby="productQuantity" value="1" required>
                         </div>
-                        <div class="col-md-6 position-relative">
-                            <label for="productStore" class="form-label">Chọn cửa hàng</label>
-                            <select class="form-select" id="productStore" required>
-                                <option selected disabled value="">Choose...</option>
-                                <option>...</option>
-                            </select>
-                            <div class="invalid-tooltip">
-                                Please select a valid state.
+                        <div class="col-6 col-lg-3 col-md-5 position-relative">
+                            <label for="productPrice" class="form-label">Đơn giá</label>
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="productPrice"
+                                    aria-describedby="validationProductPrice" value="69,000" readonly required>
+                                <span class="input-group-text" id="validationProductPrice">VND</span>
+                                <div class="invalid-tooltip">
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6 position-relative">
-                            <label for="productNote" class="form-label">Ghi chú</label>
-                            <input type="text" class="form-control" id="productNote" required>
-                            <div class="invalid-tooltip">
-                                Please provide a valid zip.
-                            </div>
+                        <div class="col-12 d-block d-md-block d-lg-none text-center position-relative">
+                            <label for="#" class="form-label"></label>
+                            <button type="button" class="btn text-danger fs-3">
+                                <i class="bi bi-x-circle-fill"></i>
+                            </button>
                         </div>
                     </form>
+                    <!-- End Form check product -->
                     <hr>
-                    <div class="col-md-12 text-end">
-                        <label for="productNote" class="form-label">Thành tiền: 109,000 VND</label>
+                    <div class="col-12 text-end">
+                        <label for="productNote" class="form-label fw-bold">Thành tiền: 178,000 VND</label>
                     </div>
                 </div>
                 <div class="modal-footer">
