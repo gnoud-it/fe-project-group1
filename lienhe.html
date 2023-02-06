@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Liên Hệ</title>
+   <!-- STYLE CSS -->
+   <link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+   <!-- FAV ICON -->
+   <link rel="shortcut icon" type="image/png" href="images/fav_logo.png" />
+   <!-- BOOTSTRAP -->
+   <link href="./plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+   <link href="./plugins/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+   <!-- JAVASCRIPT -->
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="js/move-top.js"></script>
+   <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+         $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+         });
+      });
+   </script>
+
+</head>
+
+<body class="bg-light">
+   <section id="contact">
+      <div class="overflow-hidden">
+         <div class="bg-index2 container-fluid">
+            <div class="row pt-1">
+               <div class="col-12 col-lg-6 col-md-6 mt-1">
+                  <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: ''; margin-bottom: -15px;">
+                     <ol class="breadcrumb">
+                        <li class="breadcrumb-item small">
+                           <i class="text-white bi bi-envelope-fill float-start small"></i>
+                           <h6 class="text-white float-start small">&nbsp;
+                              <a href="#" class="text-decoration-none text-white">admin@mango.com</a>
+                           </h6>
+                        </li>
+
+                        <li class="breadcrumb-item small">
+                           <i class="text-white bi bi-telephone-fill float-start small"></i>
+                           <h6 class="text-white float-start small">&nbsp;
+                              <a href="#" class="text-decoration-none text-white">SG: 033 9999</a>
+                           </h6>
+                        </li>
+
+                        <li class="breadcrumb-item small">
+                           <i class="text-white bi bi-telephone-fill float-start small"></i>
+                           <h6 class="text-white float-start small">&nbsp;
+                              <a href="#" class="text-decoration-none text-white">HN: 033 7777</a>
+                           </h6>
+                        </li>
+                     </ol>
+                  </nav>
+               </div>
+
+               <div class="col-12 col-lg-6 col-md-6 mt-1">
+                  <h6 class="text-white float-start small pe-2 float-end">
+                     <a href="#" class="text-decoration-none text-index">Đăng ký / Đăng nhập</a>
+                  </h6>
+               </div>
+
+
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="header" class=" bg-light">
+      <div class="container-fluid">
+         <div class="container">
+            <div class="row d-md-flex d-lg-flex mb-2">
+               <div class=" col-12 col-lg-4 col-md-5 mt-2 text-lg-start text-center">
+                  <img src="./images/logo.png" class="w-50" alt="">
+               </div>
+
+               <div class="col-8 col-lg-5 col-md-5 mt-4">
+                  <div class="input-group">
+                     <input class="form-control" type="search" placeholder="Nhập sản phẩm cần tìm..."
+                        aria-label="Search">
+                     <button class="btn btn-index" id="basic-addon1">
+                        <i class="bi bi-search text-white"></i>
+                     </button>
+                  </div>
+               </div>
+
+               <div class="col-4 col-lg-3 col-md-2 mt-3 mt-lg-2">
+                  <button class="btn float-end"><i class="bi bi-basket2-fill fs-2 text-index"></i>
+                     <span class="translate-middle badge rounded-pill bg-secondary">+0
+                        <span class="visually-hidden">unread cart</span></span></button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- header -->
+   <section id="navigation">
+      <div class="col-12 col-lg-12 col-md-12">
+         <nav class="navbar navbar-expand-lg navbar bg-index shadow-lg">
+            <div class="container">
+               <a class="navbar-brand" href="#">
+                  <img src="./images/logo-nav.png" alt="Bootstrap" width="100" height="40">
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                  <ul class="navbar-nav fw-semibold">
+                     <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Trang
+                           chủ</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                           Menu thức ăn
+                        </a>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#">Gà rán</a></li>
+                           <li><a class="dropdown-item" href="#">Khoai tây chiên</a></li>
+                           <li><a class="dropdown-item" href="#">Hotdog</a></li>
+                           <li><a class="dropdown-item" href="#">Hambuger</a></li>
+                           <li><a class="dropdown-item" href="#">Sandwich</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                           Menu nước
+                        </a>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#">Nước ngọt có ga</a></li>
+                           <li><a class="dropdown-item" href="#">Nước trái cây</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Giới thiệu</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="lienhe.html">Liên hệ</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </div>
+   </section>
+   <!-- nội dung -->
+   <section class="" style="background-color: rgb(240,235,229);">
+      <div class="container">
+         <div class="d-flex py-4">
+            <a href="#" class="trangchu text-decoration-none text-dark ">Trang chủ</a>
+            &nbsp; <span>/</span>
+            <p>&nbsp; Liên hệ</p>
+         </div>
+         <div class="text-center py-4">
+            <h1 class="text-center">LIÊN HỆ CHÚNG TÔI</h1>
+         </div>
+         <div class="row row-cols-1 row-cols-md-3">
+            <!-- điện thoại -->
+            <div class="col pb-3">
+               <div class=" d-flex d-lg-block">
+                  <i class="bi bi-phone text-warning fs-2 pe-2 "></i>
+                  <h5 class="fw-bold mb-0 pt-1 ">Điện thoại </h5>
+               </div>
+
+               <p class="text-black-50 mb-0 pb-1">+ 033.9999</p>
+
+            </div>
+            <!-- địa chỉ -->
+            <div class="col pb-3">
+               <div class=" d-flex d-lg-block">
+                  <i class="bi bi-geo-alt text-warning fs-2 pe-2"></i>
+                  <h5 class="fw-bold mb-0 pt-1 ">Địa chỉ </h5>
+               </div>
+
+               <p class="text-black-50 mb-0 pb-1">CN1: 777 Lê Lai, Bến Thành, Q1</p>
+               <p class="text-black-50 ">CN2: 448 Phan Huy Ích, P12, Gò Vấp</p>
+            </div>
+            <!-- email -->
+            <div class="col pb-3">
+               <div class=" d-flex d-lg-block">
+                  <i class="bi bi-envelope text-warning fs-2 pe-2 "></i>
+                  <h5 class="fw-bold mb-0 pt-1 ">Email </h5>
+               </div>
+               <p class="text-black-50 ">admin@mango.com</p>
+
+            </div>
+         </div>
+
+         <div class="row py-4">
+            <div class="col col-12 col-md-6  pe-lg-3">
+               <iframe class="w-100 h-100"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31348.232344791108!2d106.6367293279236!3d10.84730775773237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce800a25143c8e3a!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIFPDoGkgR8Oybg!5e0!3m2!1svi!2s!4v1675529657475!5m2!1svi!2s"
+                  style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+            <div class="col col-12 col-md-6 py-4 ps-lg-3">
+               <h4 class="text-center fw-bold pb-3">Gửi tin nhắn cho chúng tôi</h4>
+               <form action="">
+                  <div class="row g-3 ">
+                     <!-- name -->
+                     <div class="col">
+                        <input type="text" class="form-control" placeholder="Họ Và Tên" aria-label="Your name"
+                           id="yourName">
+                     </div>
+                     <!-- email -->
+                     <div class="col-12">
+                        <input type="email" class="form-control" placeholder="Email" aria-label="email" id="inputEmail">
+                     </div>
+                     <!-- nội dung -->
+                     <div class="col-12">
+                        <textarea class="form-control" placeholder="Nội Dung" id="noiDung" rows="5"></textarea>
+                     </div>
+                     <!-- nút -->
+                     <div class="col-12">
+                        <button type="submit" class="border-0 px-3 py-2 rounded-1 text-white fw-bold btn-bg-index">Gửi
+                           đi</button>
+                     </div>
+
+
+                  </div>
+
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- footer -->
+   <section id="footer">
+      <div class="container-fluid bg-index2">
+         <div class="container pt-4 text-white-index">
+            <div class="row d-block d-md-flex d-lg-flex">
+               <div class="col-12 col-lg-3 col-md-6 pb-0 pb-lg-5 pt-4 pt-lg-5 text-center text-lg-start text-md-start">
+                  <h6 class="pb-3 text-white text-uppercase">Hệ thống cửa hàng</h6>
+                  <ul class="list-unstyled">
+                     <li class="text-white"><a><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Hồ Chí Minh:</a>
+                     </li>
+                     <li><a>CN1: 777 Lê Lai, Bến Thành, Q1</a></li>
+                     <li><a>CN2: 448 Phan Huy Ích, P12, Gò Vấp</a></li>
+                  </ul>
+               </div>
+
+               <div class="col-12 col-lg-3 col-md-6 pb-0 pb-lg-5 pt-4 pt-lg-5 text-center text-lg-start text-md-start">
+                  <h6 class="pb-3 text-white text-uppercase">Kết nối với chúng tôi</h6>
+                  <ul class="list-unstyled">
+                     <li><a href="#"><i class="bi bi-facebook text-primary"></i>&nbsp;&nbsp;Facebook</a></li>
+                     <li><a href="#"><i class="bi bi-instagram text-danger"></i>&nbsp;&nbsp;Instagram</a></li>
+                     <li><a href="#"><i class="bi bi-youtube text-danger"></i>&nbsp;&nbsp;Youtube</a></li>
+                  </ul>
+               </div>
+
+               <div class="col-12 col-lg-3 col-md-6 pb-0 pb-lg-5 pt-4 pt-lg-5 text-center text-lg-start text-md-start">
+                  <h6 class="pb-3 text-white text-uppercase">Chăm sóc khách hàng</h6>
+                  <ul class="list-unstyled">
+                     <li><a href="#"><i class="bi bi-telephone-fill text-white"></i>&nbsp;&nbsp;033.9999</a></li>
+                     <li><a href="#"><i class="bi bi-envelope-fill text-white"></i></i>&nbsp;&nbsp;admin@mango.com</a>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="col-12 col-lg-3 col-md-6 pb-0 pb-lg-5 pt-4 pt-lg-5 text-center text-lg-start text-md-start">
+                  <h6 class="pb-3 text-white text-uppercase">Đăng ký nhận thông báo</h6>
+                  <p>Chúng tôi sẽ gửi mail cho bạn khi có thông tin mới về sản phẩm</p>
+                  <form class="d-flex pb-3" role="search">
+                     <input class="form-control me-2" type="search" placeholder="Nhập email của bạn..."
+                        aria-label="Search">
+                     <button class="btn btn-index" type="submit">Gửi</button>
+                  </form>
+                  <div class="text-center">
+                     <a href="#"><img src="./images/logo-footer.png" width="250" height="80"></a>
+                     <p>Since 2023</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container pb-2 text-white-index">
+            <div class="row d-block d-md-flex d-lg-flex">
+               <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+               <div class="col text-center">
+                  <p>&copy; 2023 All Right Reserved | Nhóm 1 - SaigonTech</p>
+               </div>
+            </div>
+         </div>
+         <!-- <div class="container-fluid bg-index2">
+         <div class="container pb-2 text-white-index">
+            <div class="row d-block d-md-flex d-lg-flex">
+               <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+               <div class="col text-center">
+                  <p>&copy; 2023 All Right Reserved | Nhóm 1 - SaigonTech</p>
+               </div>
+            </div>
+         </div>
+      </div> -->
+   </section>
+   <script type="text/javascript">
+      $(document).ready(function () {
+         var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+         };
+
+         $().UItoTop({ easingType: 'smooth' });
+      });
+   </script>
+   <script src="./plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
