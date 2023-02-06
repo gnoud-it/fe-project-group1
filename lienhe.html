@@ -286,6 +286,111 @@
          </div>
       </div> -->
    </section>
+
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-fullscreen-sm-down modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h1 class="modal-title fs-5" id="exampleModalLabel">Giỏ hàng</h1>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <!-- Form check product -->
+               <form class="row g-3 needs-validation" validate>
+                  <div class="col-lg-1 d-none d-lg-block position-relative">
+                     <label for="#" class="form-label"></label>
+                     <button type="button" class="btn text-danger fs-4">
+                        <i class="bi bi-x-circle-fill"></i>
+                     </button>
+                  </div>
+                  <div class="col-12 col-lg-3 col-md-3 d-none d-lg-block d-md-block position-relative">
+                     <img src="./images/combo-seller/combo-bur-1.jpg" class="img-fluid rounded-5 w-50 ms-4" alt="">
+                  </div>
+                  <div class="col-12 col-lg-4 col-md-5 position-relative">
+                     <label for="productName" class="form-label">Tên sản phẩm</label>
+                     <input type="text" class="form-control" id="productName"
+                        value="COMBO Burger Cá Hồi Xông Khói (2 miếng)" readonly disabled required>
+                  </div>
+                  <div class="col-3 col-lg-1 col-md-1 position-relative">
+                     <label for="productQuantity" class="form-label">SL</label>
+                     <input type="number" class="form-control" id="validationTooltipUsername"
+                        aria-describedby="productQuantity" value="1" required>
+                  </div>
+                  <div class="col-9 col-lg-3 col-md-3 position-relative">
+                     <label for="productPrice" class="form-label">Đơn giá</label>
+                     <div class="input-group has-validation">
+                        <input type="text" class="form-control" id="productPrice"
+                           aria-describedby="validationProductPrice" value="99,000 VND" readonly required>
+                        <span class="input-group-text" id="validationProductPrice">VND</span>
+                        <div class="invalid-tooltip">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 d-block d-md-block d-lg-none text-center position-relative">
+                     <label for="#" class="form-label"></label>
+                     <button type="button" class="btn text-danger fs-3">
+                        <i class="bi bi-x-circle-fill"></i>
+                     </button>
+                  </div>
+               </form>
+               <!-- End Form check product -->
+
+               <hr>
+
+               <!-- Form check product -->
+               <form class="row g-3 needs-validation" validate>
+                  <div class="col-lg-1 d-none d-lg-block position-relative">
+                     <label for="#" class="form-label"></label>
+                     <button type="button" class="btn text-danger fs-4">
+                        <i class="bi bi-x-circle-fill"></i>
+                     </button>
+                  </div>
+                  <div class="col-12 col-lg-3 col-md-3 d-none d-lg-block d-md-block position-relative">
+                     <img src="./images/combo-seller/combo-chic-1.jpg" class="img-fluid rounded-5 w-50 ms-4" alt="">
+                  </div>
+                  <div class="col-12 col-lg-4 col-md-5 position-relative">
+                     <label for="productName" class="form-label">Tên sản phẩm</label>
+                     <input type="text" class="form-control" id="productName" value="COMBO Gà Rán Giòn Cay (2 Miếng)"
+                        readonly disabled required>
+                  </div>
+                  <div class="col-3 col-lg-1 col-md-1 position-relative">
+                     <label for="productQuantity" class="form-label">SL</label>
+                     <input type="number" class="form-control" id="validationTooltipUsername"
+                        aria-describedby="productQuantity" value="1" required>
+                  </div>
+                  <div class="col-9 col-lg-3 col-md-3 position-relative">
+                     <label for="productPrice" class="form-label">Đơn giá</label>
+                     <div class="input-group has-validation">
+                        <input type="text" class="form-control" id="productPrice"
+                           aria-describedby="validationProductPrice" value="90,000 VND" readonly required>
+                        <span class="input-group-text" id="validationProductPrice">VND</span>
+                        <div class="invalid-tooltip">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 d-block d-md-block d-lg-none text-center position-relative">
+                     <label for="#" class="form-label"></label>
+                     <button type="button" class="btn text-danger fs-3">
+                        <i class="bi bi-x-circle-fill"></i>
+                     </button>
+                  </div>
+               </form>
+               <!-- End Form check product -->
+               <hr>
+               <div class="col-12 text-end">
+                  <label for="productNote" class="form-label fw-bold">Thành tiền: 189,000 VND</label>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+               <button type="submit" class="btn btn-index">Thanh toán</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- End Modal -->
+
    <script type="text/javascript">
       $(document).ready(function () {
          var defaults = {
