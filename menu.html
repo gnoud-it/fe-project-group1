@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MANGO FOOD | Menu</title>
+    <!-- STYLE CSS -->
+    <link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- FAV ICON -->
+    <link rel="shortcut icon" type="image/png" href="images/fav_logo.png" />
+    <!-- BOOTSTRAP -->
+    <link href="./plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./plugins/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+            });
+        });
+    </script>
+
+</head>
+
+<body class="bg-light">
+    <section id="contact">
+        <div class="overflow-hidden">
+            <div class="bg-index2 container-fluid">
+                <div class="row pt-1">
+                    <div class="col-12 col-lg-6 col-md-8 mt-1">
+                        <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: ''; margin-bottom: -15px;">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item small">
+                                    <h6 class="text-white float-start small">&nbsp;
+                                        <a class="text-decoration-none text-white">Giờ mở cửa: T2-T6: 7:00 AM -
+                                            22:30 PM, T7-CN: 7:30 AM - 23:00 PM
+                                        </a>
+                                    </h6>
+                                </li>
+
+                                <li class="breadcrumb-item small">
+                                    <i class="text-white bi bi-telephone-fill float-start small"></i>
+                                    <h6 class="text-white float-start small">&nbsp;
+                                        <a href="tel:0339999" class="text-decoration-none text-white">033.9999</a>
+                                    </h6>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-md-4 mt-1">
+                        <h6 class="text-white float-start small pe-2 float-end">
+                            <a href="#" class="text-decoration-none text-index">Đăng ký / Đăng nhập</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="header" class=" bg-light">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row d-md-flex d-lg-flex mb-2">
+                    <div class=" col-12 col-lg-4 col-md-5 mt-2 text-lg-start text-center">
+                        <img src="./images/logo.png" class="w-50" alt="">
+                    </div>
+
+                    <div class="col-8 col-lg-5 col-md-5 mt-4">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Nhập sản phẩm cần tìm..."
+                                aria-label="Search">
+                            <button class="btn btn-index" id="basic-addon1">
+                                <i class="bi bi-search text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-lg-3 col-md-2 mt-3 mt-lg-2">
+                        <button class="btn float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-basket2-fill fs-2 text-index"></i>
+                            <span class="badge text-bg-secondary rounded-5">+2</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="navigation">
+        <div class="col-12 col-lg-12 col-md-12">
+            <nav class="navbar navbar-expand-lg navbar bg-index shadow-sm" style="letter-spacing: 1px;">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/logo-nav.png" alt="Bootstrap" width="100" height="40">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                        <ul class="navbar-nav fw-semibold">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Trang
+                                    chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="lienhe.html">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section id="breadcrum">
+        <div class="container pt-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-index">Trang
+                            chủ</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Menu</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section id="content1">
+        <div id="bgMenu" class="text-center mb-5 shadow" style="padding-top: 70px; padding-bottom: 70px;">
+            <h2 class="text-white text-uppercase fw-semibold" style="letter-spacing: 2px;">Menu tất cả các món</h2>
+        </div>
+
+        <div class="container">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page">Tất cả</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="list-item-2" href="#" style="color: #f05123">Gà rán</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="list-item-2" href="#" style="color: #f05123">Hamburger</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="list-item-3" href="#" style="color: #f05123">Khoai tây chiên</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="list-item-4" href="#" style="color: #f05123">Nước có ga</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="list-item-4" href="#" style="color: #f05123">Nước trái cây</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container pt-5 pb-4">
+            <div class="row text-center">
+                <div class="col-12 col-lg-3 col-md-6 pb-4">
+                    <div class="card h-100 shadow">
+                        <img src="./images/combo-seller/combo-chic-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body border-bottom border-3 rounded border-index">
+                            <h5 class="card-title text-index">COMBO Gà Rán Giòn Cay (2 Miếng)</h5>
+                            <h6 class="card-title text-muted small pt-2">1 Nước (M) + 1 Khoai Tây (M) + 2
+                                Miếng gà rán giòn cay
+                            </h6>
+                            <h6 class="card-title text-danger fw-bold pt-2 pb-3 fs-5">90,000 VND</h6>
+                            <a class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-6 pb-4">
+                    <div class="card h-100 shadow">
+                        <img src="./images/combo-seller/combo-chic-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body border-bottom border-3 rounded border-index">
+                            <h5 class="card-title text-index">COMBO Gà BBQ (2 Miếng)</h5>
+                            <h6 class="card-title text-muted small pt-2">1 Nước (M) + 1 Khoai Tây Chiên (M) + 3 Miếng gà
+                                rán giòn cay</h6>
+                            <h6 class="card-title text-danger fw-bold pt-2 pb-3 fs-5">119,000 VND</h6>
+                            <a class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-6 pb-4">
+                    <div class="card h-100 shadow">
+                        <img src="./images/combo-seller/combo-bur-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body border-bottom border-3 rounded border-index">
+                            <h5 class="card-title text-index">COMBO Burger Cá Hồi Xông Khói (2 phần)</h5>
+                            <h6 class="card-title text-muted small pt-2">2 Burger Cá Hồi Xông Khói + 4 Miếng gà viên + 2
+                                Nước ngọt</h6>
+                            <h6 class="card-title text-danger fw-bold pt-2 pb-3 fs-5">169,000 VND</h6>
+                            <a class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-6 pb-4">
+                    <div class="card h-100 shadow">
+                        <img src="./images/combo-seller/combo-bur-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body border-bottom border-3 rounded border-index">
+                            <h5 class="card-title text-index">COMBO Burger Cá Hồi Xông Khói (2 miếng)</h5>
+                            <h6 class="card-title text-muted small pt-2">2 Miếng Cá Hồi Xông Khói Phô Mai + 1
+                                Khoai tây chiên + 1 Nước ngọt</h6>
+                            <h6 class="card-title text-danger fw-bold pt-2 pb-3 fs-5">109,000 VND</h6>
+                            <a class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-6 pb-4">
+                    <div class="card h-100 shadow">
+                        <img src="./images/combo-seller/combo-chic-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body border-bottom border-3 rounded border-index">
+                            <h5 class="card-title text-index">COMBO Gà Rán Giòn Cay (2 Miếng)</h5>
+                            <h6 class="card-title text-muted small pt-2">1 Nước (M) + 1 Khoai Tây (M) + 2
+                                Miếng gà rán giòn cay
+                            </h6>
+                            <h6 class="card-title text-danger fw-bold pt-2 pb-3 fs-5">90,000 VND</h6>
+                            <a class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-6 pb-4">
+                    <div class="card h-100 shadow">
+                        <img src="./images/combo-seller/combo-chic-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body border-bottom border-3 rounded border-index">
+                            <h5 class="card-title text-index">COMBO Gà BBQ (2 Miếng)</h5>
+                            <h6 class="card-title text-muted small pt-2">1 Nước (M) + 1 Khoai Tây Chiên (M) + 3 Miếng gà
+                                rán giòn cay</h6>
+                            <h6 class="card-title text-danger fw-bold pt-2 pb-3 fs-5">119,000 VND</h6>
+                            <a class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-6 pb-4">
+                    <div class="card h-100 shadow">
+                        <img src="./images/combo-seller/combo-bur-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body border-bottom border-3 rounded border-index">
+                            <h5 class="card-title text-index">COMBO Burger Cá Hồi Xông Khói (2 phần)</h5>
+                            <h6 class="card-title text-muted small pt-2">2 Burger Cá Hồi Xông Khói + 4 Miếng gà viên + 2
+                                Nước ngọt</h6>
+                            <h6 class="card-title text-danger fw-bold pt-2 pb-3 fs-5">169,000 VND</h6>
+                            <a class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-6 pb-4">
+                    <div class="card h-100 shadow">
+                        <img src="./images/combo-seller/combo-bur-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body border-bottom border-3 rounded border-index">
+                            <h5 class="card-title text-index">COMBO Burger Cá Hồi Xông Khói (2 miếng)</h5>
+                            <h6 class="card-title text-muted small pt-2">2 Miếng Cá Hồi Xông Khói Phô Mai + 1
+                                Khoai tây chiên + 1 Nước ngọt</h6>
+                            <h6 class="card-title text-danger fw-bold pt-2 pb-3 fs-5">109,000 VND</h6>
+                            <a class="btn btn-index"><i class="bi bi-basket2"></i>&nbsp;Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 pt-4">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container-fluid bg-index2">
+            <div class="container pt-4 text-white-index">
+                <div class="row d-block d-md-flex d-lg-flex">
+                    <div
+                        class="col-12 col-lg-3 col-md-6 pb-0 pb-lg-5 pt-4 pt-lg-5 text-center text-lg-start text-md-start">
+                        <h6 class="pb-3 text-white text-uppercase">Hệ thống cửa hàng</h6>
+                        <ul class="list-unstyled">
+                            <li class="text-white"><a><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Hồ Chí Minh:</a>
+                            </li>
+                            <li><a>CN1: 777 Lê Lai, Bến Thành, Q1</a></li>
+                            <li><a>CN2: 448 Phan Huy Ích, P12, Gò Vấp</a></li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="col-12 col-lg-3 col-md-6 pb-0 pb-lg-5 pt-4 pt-lg-5 text-center text-lg-start text-md-start">
+                        <h6 class="pb-3 text-white text-uppercase">Kết nối với chúng tôi</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="bi bi-facebook text-primary"></i>&nbsp;&nbsp;Facebook</a></li>
+                            <li><a href="#"><i class="bi bi-instagram text-danger"></i>&nbsp;&nbsp;Instagram</a></li>
+                            <li><a href="#"><i class="bi bi-youtube text-danger"></i>&nbsp;&nbsp;Youtube</a></li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="col-12 col-lg-3 col-md-6 pb-0 pb-lg-5 pt-4 pt-lg-5 text-center text-lg-start text-md-start">
+                        <h6 class="pb-3 text-white text-uppercase">Chăm sóc khách hàng</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="bi bi-telephone-fill text-white"></i>&nbsp;&nbsp;033.9999</a></li>
+                            <li><a href="#"><i
+                                        class="bi bi-envelope-fill text-white"></i></i>&nbsp;&nbsp;admin@mango.com</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="col-12 col-lg-3 col-md-6 pb-0 pb-lg-5 pt-4 pt-lg-5 text-center text-lg-start text-md-start">
+                        <h6 class="pb-3 text-white text-uppercase">Đăng ký nhận thông báo</h6>
+                        <p>Chúng tôi sẽ gửi mail cho bạn khi có thông tin mới về sản phẩm</p>
+                        <form class="d-flex pb-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Nhập email của bạn..."
+                                aria-label="Search">
+                            <button class="btn btn-index" type="submit">Gửi</button>
+                        </form>
+                        <div class="text-center">
+                            <a href="#"><img src="./images/logo-footer.png" width="250" height="80"></a>
+                            <p>Since 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container pb-2 text-white-index">
+                <div class="row d-block d-md-flex d-lg-flex">
+                    <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+                    <div class="col text-center">
+                        <p>&copy; 2023 All Right Reserved | Nhóm 1 - SaigonTech</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-fullscreen-sm-down modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Giỏ hàng</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Form check product -->
+                    <form class="row g-3 needs-validation" validate>
+                        <div class="col-lg-1 d-none d-lg-block position-relative">
+                            <label for="#" class="form-label"></label>
+                            <button type="button" class="btn text-danger fs-4">
+                                <i class="bi bi-x-circle-fill"></i>
+                            </button>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-3 d-none d-lg-block d-md-block position-relative">
+                            <img src="./images/combo-seller/combo-bur-1.jpg" class="img-fluid rounded-5 w-50 ms-4"
+                                alt="">
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-5 position-relative">
+                            <label for="productName" class="form-label">Tên sản phẩm</label>
+                            <input type="text" class="form-control" id="productName"
+                                value="COMBO Burger Cá Hồi Xông Khói (2 miếng)" readonly disabled required>
+                        </div>
+                        <div class="col-3 col-lg-1 col-md-1 position-relative">
+                            <label for="productQuantity" class="form-label">SL</label>
+                            <input type="number" class="form-control" id="validationTooltipUsername"
+                                aria-describedby="productQuantity" value="1" required>
+                        </div>
+                        <div class="col-9 col-lg-3 col-md-3 position-relative">
+                            <label for="productPrice" class="form-label">Đơn giá</label>
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="productPrice"
+                                    aria-describedby="validationProductPrice" value="99,000 VND" readonly required>
+                                <span class="input-group-text" id="validationProductPrice">VND</span>
+                                <div class="invalid-tooltip">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-block d-md-block d-lg-none text-center position-relative">
+                            <label for="#" class="form-label"></label>
+                            <button type="button" class="btn text-danger fs-3">
+                                <i class="bi bi-x-circle-fill"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <!-- End Form check product -->
+
+                    <hr>
+
+                    <!-- Form check product -->
+                    <form class="row g-3 needs-validation" validate>
+                        <div class="col-lg-1 d-none d-lg-block position-relative">
+                            <label for="#" class="form-label"></label>
+                            <button type="button" class="btn text-danger fs-4">
+                                <i class="bi bi-x-circle-fill"></i>
+                            </button>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-3 d-none d-lg-block d-md-block position-relative">
+                            <img src="./images/combo-seller/combo-chic-1.jpg" class="img-fluid rounded-5 w-50 ms-4"
+                                alt="">
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-5 position-relative">
+                            <label for="productName" class="form-label">Tên sản phẩm</label>
+                            <input type="text" class="form-control" id="productName"
+                                value="COMBO Gà Rán Giòn Cay (2 Miếng)" readonly disabled required>
+                        </div>
+                        <div class="col-3 col-lg-1 col-md-1 position-relative">
+                            <label for="productQuantity" class="form-label">SL</label>
+                            <input type="number" class="form-control" id="validationTooltipUsername"
+                                aria-describedby="productQuantity" value="1" required>
+                        </div>
+                        <div class="col-9 col-lg-3 col-md-3 position-relative">
+                            <label for="productPrice" class="form-label">Đơn giá</label>
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="productPrice"
+                                    aria-describedby="validationProductPrice" value="90,000 VND" readonly required>
+                                <span class="input-group-text" id="validationProductPrice">VND</span>
+                                <div class="invalid-tooltip">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-block d-md-block d-lg-none text-center position-relative">
+                            <label for="#" class="form-label"></label>
+                            <button type="button" class="btn text-danger fs-3">
+                                <i class="bi bi-x-circle-fill"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <!-- End Form check product -->
+                    <hr>
+                    <div class="col-12 text-end">
+                        <label for="productNote" class="form-label fw-bold">Thành tiền: 189,000 VND</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-index">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+            };
+
+            $().UItoTop({ easingType: 'smooth' });
+        });
+    </script>
+    <script src="./plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

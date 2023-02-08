@@ -5,7 +5,7 @@
    <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Liên Hệ</title>
+   <title>MANGO FOOD | Liên hệ</title>
    <!-- STYLE CSS -->
    <link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
    <!-- FAV ICON -->
@@ -32,40 +32,32 @@
       <div class="overflow-hidden">
          <div class="bg-index2 container-fluid">
             <div class="row pt-1">
-               <div class="col-12 col-lg-6 col-md-6 mt-1">
+               <div class="col-12 col-lg-6 col-md-8 mt-1">
                   <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: ''; margin-bottom: -15px;">
                      <ol class="breadcrumb">
                         <li class="breadcrumb-item small">
-                           <i class="text-white bi bi-envelope-fill float-start small"></i>
                            <h6 class="text-white float-start small">&nbsp;
-                              <a href="#" class="text-decoration-none text-white">admin@mango.com</a>
+                              <a class="text-decoration-none text-white">Giờ mở cửa: T2-T6: 7:00 AM -
+                                 22:30 PM, T7-CN: 7:30 AM - 23:00 PM
+                              </a>
                            </h6>
                         </li>
 
                         <li class="breadcrumb-item small">
                            <i class="text-white bi bi-telephone-fill float-start small"></i>
                            <h6 class="text-white float-start small">&nbsp;
-                              <a href="#" class="text-decoration-none text-white">SG: 033 9999</a>
-                           </h6>
-                        </li>
-
-                        <li class="breadcrumb-item small">
-                           <i class="text-white bi bi-telephone-fill float-start small"></i>
-                           <h6 class="text-white float-start small">&nbsp;
-                              <a href="#" class="text-decoration-none text-white">HN: 033 7777</a>
+                              <a href="tel:0339999" class="text-decoration-none text-white">033.9999</a>
                            </h6>
                         </li>
                      </ol>
                   </nav>
                </div>
 
-               <div class="col-12 col-lg-6 col-md-6 mt-1">
+               <div class="col-12 col-lg-6 col-md-4 mt-1">
                   <h6 class="text-white float-start small pe-2 float-end">
                      <a href="#" class="text-decoration-none text-index">Đăng ký / Đăng nhập</a>
                   </h6>
                </div>
-
-
             </div>
          </div>
       </div>
@@ -90,9 +82,10 @@
                </div>
 
                <div class="col-4 col-lg-3 col-md-2 mt-3 mt-lg-2">
-                  <button class="btn float-end"><i class="bi bi-basket2-fill fs-2 text-index"></i>
-                     <span class="translate-middle badge rounded-pill bg-secondary">+0
-                        <span class="visually-hidden">unread cart</span></span></button>
+                  <button class="btn float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                     <i class="bi bi-basket2-fill fs-2 text-index"></i>
+                     <span class="badge text-bg-secondary rounded-5">+2</span>
+                  </button>
                </div>
             </div>
          </div>
@@ -101,7 +94,7 @@
    <!-- header -->
    <section id="navigation">
       <div class="col-12 col-lg-12 col-md-12">
-         <nav class="navbar navbar-expand-lg navbar bg-index shadow-lg">
+         <nav class="navbar navbar-expand-lg navbar bg-index shadow-sm" style="letter-spacing: 1px;">
             <div class="container">
                <a class="navbar-brand" href="#">
                   <img src="./images/logo-nav.png" alt="Bootstrap" width="100" height="40">
@@ -114,37 +107,20 @@
                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                   <ul class="navbar-nav fw-semibold">
                      <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="index.html">Trang
+                        <a class="nav-link" aria-current="page" href="index.html">Trang
                            chủ</a>
                      </li>
-                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                           Menu thức ăn
-                        </a>
-                        <ul class="dropdown-menu">
-                           <li><a class="dropdown-item" href="#">Gà rán</a></li>
-                           <li><a class="dropdown-item" href="#">Khoai tây chiên</a></li>
-                           <li><a class="dropdown-item" href="#">Hotdog</a></li>
-                           <li><a class="dropdown-item" href="#">Hambuger</a></li>
-                           <li><a class="dropdown-item" href="#">Sandwich</a></li>
-                        </ul>
+                     <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
                      </li>
-                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                           Menu nước
-                        </a>
-                        <ul class="dropdown-menu">
-                           <li><a class="dropdown-item" href="#">Nước ngọt có ga</a></li>
-                           <li><a class="dropdown-item" href="#">Nước trái cây</a></li>
-                        </ul>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="#">Giới thiệu</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="lienhe.html">Liên hệ</a>
+                        <a class="nav-link active text-white" href="lienhe.html">Liên hệ</a>
                      </li>
                   </ul>
                </div>
@@ -152,46 +128,55 @@
          </nav>
       </div>
    </section>
+
+   <section id="breadcrum">
+      <div class="container pt-3">
+         <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+               <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-index">Trang
+                     chủ</a></li>
+               <li class="breadcrumb-item active" aria-current="page">Liên hệ</li>
+            </ol>
+         </nav>
+      </div>
+   </section>
    <!-- nội dung -->
-   <section class="" style="background-color: rgb(240,235,229);">
+   <section class="bg-light">
       <div class="container">
-         <div class="d-flex py-4">
-            <a href="#" class="trangchu text-decoration-none text-dark ">Trang chủ</a>
-            &nbsp; <span>/</span>
-            <p>&nbsp; Liên hệ</p>
-         </div>
          <div class="text-center py-4">
-            <h1 class="text-center">LIÊN HỆ CHÚNG TÔI</h1>
+            <h1 class="text-center">LIÊN HỆ VỚI CHÚNG TÔI</h1>
          </div>
          <div class="row row-cols-1 row-cols-md-3">
             <!-- điện thoại -->
             <div class="col pb-3">
-               <div class=" d-flex d-lg-block">
+               <div class="float-start d-flex d-lg-block">
                   <i class="bi bi-phone text-warning fs-2 pe-2 "></i>
-                  <h5 class="fw-bold mb-0 pt-1 ">Điện thoại </h5>
                </div>
-
-               <p class="text-black-50 mb-0 pb-1">+ 033.9999</p>
-
+               <div class="float-start">
+                  <h5 class="float-end fw-bold mb-0 pt-1 ">Điện thoại</h5>
+                  <p class="text-black-50 mb-0 pb-1">+ 033.9999</p>
+               </div>
             </div>
             <!-- địa chỉ -->
             <div class="col pb-3">
-               <div class=" d-flex d-lg-block">
+               <div class="float-start d-flex d-lg-block">
                   <i class="bi bi-geo-alt text-warning fs-2 pe-2"></i>
-                  <h5 class="fw-bold mb-0 pt-1 ">Địa chỉ </h5>
                </div>
-
-               <p class="text-black-50 mb-0 pb-1">CN1: 777 Lê Lai, Bến Thành, Q1</p>
-               <p class="text-black-50 ">CN2: 448 Phan Huy Ích, P12, Gò Vấp</p>
+               <div class="float-start">
+                  <h5 class="fw-bold mb-0 pt-1 ">Địa chỉ </h5>
+                  <p class="text-black-50 mb-0 pb-1">CN1: 777 Lê Lai, Bến Thành, Q1</p>
+                  <p class="text-black-50 ">CN2: 448 Phan Huy Ích, P12, Gò Vấp</p>
+               </div>
             </div>
             <!-- email -->
             <div class="col pb-3">
-               <div class=" d-flex d-lg-block">
+               <div class="float-start d-flex d-lg-block">
                   <i class="bi bi-envelope text-warning fs-2 pe-2 "></i>
-                  <h5 class="fw-bold mb-0 pt-1 ">Email </h5>
                </div>
-               <p class="text-black-50 ">admin@mango.com</p>
-
+               <div class="float-start">
+                  <h5 class="fw-bold mb-0 pt-1 ">Email</h5>
+                  <p class="text-black-50 ">admin@mango.com</p>
+               </div>
             </div>
          </div>
 
@@ -301,6 +286,111 @@
          </div>
       </div> -->
    </section>
+
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-fullscreen-sm-down modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h1 class="modal-title fs-5" id="exampleModalLabel">Giỏ hàng</h1>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <!-- Form check product -->
+               <form class="row g-3 needs-validation" validate>
+                  <div class="col-lg-1 d-none d-lg-block position-relative">
+                     <label for="#" class="form-label"></label>
+                     <button type="button" class="btn text-danger fs-4">
+                        <i class="bi bi-x-circle-fill"></i>
+                     </button>
+                  </div>
+                  <div class="col-12 col-lg-3 col-md-3 d-none d-lg-block d-md-block position-relative">
+                     <img src="./images/combo-seller/combo-bur-1.jpg" class="img-fluid rounded-5 w-50 ms-4" alt="">
+                  </div>
+                  <div class="col-12 col-lg-4 col-md-5 position-relative">
+                     <label for="productName" class="form-label">Tên sản phẩm</label>
+                     <input type="text" class="form-control" id="productName"
+                        value="COMBO Burger Cá Hồi Xông Khói (2 miếng)" readonly disabled required>
+                  </div>
+                  <div class="col-3 col-lg-1 col-md-1 position-relative">
+                     <label for="productQuantity" class="form-label">SL</label>
+                     <input type="number" class="form-control" id="validationTooltipUsername"
+                        aria-describedby="productQuantity" value="1" required>
+                  </div>
+                  <div class="col-9 col-lg-3 col-md-3 position-relative">
+                     <label for="productPrice" class="form-label">Đơn giá</label>
+                     <div class="input-group has-validation">
+                        <input type="text" class="form-control" id="productPrice"
+                           aria-describedby="validationProductPrice" value="99,000 VND" readonly required>
+                        <span class="input-group-text" id="validationProductPrice">VND</span>
+                        <div class="invalid-tooltip">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 d-block d-md-block d-lg-none text-center position-relative">
+                     <label for="#" class="form-label"></label>
+                     <button type="button" class="btn text-danger fs-3">
+                        <i class="bi bi-x-circle-fill"></i>
+                     </button>
+                  </div>
+               </form>
+               <!-- End Form check product -->
+
+               <hr>
+
+               <!-- Form check product -->
+               <form class="row g-3 needs-validation" validate>
+                  <div class="col-lg-1 d-none d-lg-block position-relative">
+                     <label for="#" class="form-label"></label>
+                     <button type="button" class="btn text-danger fs-4">
+                        <i class="bi bi-x-circle-fill"></i>
+                     </button>
+                  </div>
+                  <div class="col-12 col-lg-3 col-md-3 d-none d-lg-block d-md-block position-relative">
+                     <img src="./images/combo-seller/combo-chic-1.jpg" class="img-fluid rounded-5 w-50 ms-4" alt="">
+                  </div>
+                  <div class="col-12 col-lg-4 col-md-5 position-relative">
+                     <label for="productName" class="form-label">Tên sản phẩm</label>
+                     <input type="text" class="form-control" id="productName" value="COMBO Gà Rán Giòn Cay (2 Miếng)"
+                        readonly disabled required>
+                  </div>
+                  <div class="col-3 col-lg-1 col-md-1 position-relative">
+                     <label for="productQuantity" class="form-label">SL</label>
+                     <input type="number" class="form-control" id="validationTooltipUsername"
+                        aria-describedby="productQuantity" value="1" required>
+                  </div>
+                  <div class="col-9 col-lg-3 col-md-3 position-relative">
+                     <label for="productPrice" class="form-label">Đơn giá</label>
+                     <div class="input-group has-validation">
+                        <input type="text" class="form-control" id="productPrice"
+                           aria-describedby="validationProductPrice" value="90,000 VND" readonly required>
+                        <span class="input-group-text" id="validationProductPrice">VND</span>
+                        <div class="invalid-tooltip">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 d-block d-md-block d-lg-none text-center position-relative">
+                     <label for="#" class="form-label"></label>
+                     <button type="button" class="btn text-danger fs-3">
+                        <i class="bi bi-x-circle-fill"></i>
+                     </button>
+                  </div>
+               </form>
+               <!-- End Form check product -->
+               <hr>
+               <div class="col-12 text-end">
+                  <label for="productNote" class="form-label fw-bold">Thành tiền: 189,000 VND</label>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+               <button type="submit" class="btn btn-index">Thanh toán</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- End Modal -->
+
    <script type="text/javascript">
       $(document).ready(function () {
          var defaults = {
