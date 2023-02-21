@@ -10,7 +10,7 @@ const Header = () => {
         <div className="overflow-hidden">
           <div className="bg-index2 container-fluid">
             <div className="row pt-1">
-              <div className="col-12 col-lg-6 col-md-8 mt-1">
+              <div className="d-none d-lg-block d-md-block col-12 col-lg-6 col-md-8 mt-1">
                 <nav
                   aria-label="breadcrumb"
                   style={{ bsBreadcrumbDivider: '""', marginBottom: "-15px" }}
@@ -52,12 +52,12 @@ const Header = () => {
         </div>
       </div>
 
-      <div id="header" className=" bg-light">
+      <div id="header" className="bg-light">
         <div className="container-fluid">
           <div className="container">
             <div className="row d-md-flex d-lg-flex mb-2">
               <div className=" col-12 col-lg-4 col-md-5 mt-2 text-lg-start text-center">
-                <NavLink to={"/index"}>
+                <NavLink to={"/Home"}>
                   <img src={logo} className="w-50" alt="logo" />
                 </NavLink>
               </div>
@@ -96,7 +96,7 @@ const Header = () => {
             style={{ letterSpacing: 1 }}
           >
             <div className="container">
-              <NavLink className="navbar-brand" to={"/index"}>
+              <NavLink className="navbar-brand" to={"/Home"}>
                 <img src={logo_nav} alt="logo nav" width={100} height={40} />
               </NavLink>
               <button
@@ -130,7 +130,7 @@ const Header = () => {
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to={"/Menu"}>
+                    <NavLink className="nav-link" to={"/Blog"}>
                       Blog
                     </NavLink>
                   </li>

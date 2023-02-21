@@ -102,12 +102,12 @@ const Home = () => {
           <div className="row text-center">
             <div className="col-12 col-lg-3 col-md-6 pb-4">
               <div className="card h-100 shadow">
-                <NavLink to={"ProductDetail"} className="text-decoration-none">
+                <NavLink to={"/ProductDetail"} className="text-decoration-none">
                   <img src={new_pro1} className="card-img-top" alt="..." />
                 </NavLink>
                 <div className="card-body border-bottom border-3 rounded border-index">
                   <NavLink
-                    to={"ProductDetail"}
+                    to={"/ProductDetail"}
                     className="text-decoration-none"
                   >
                     <h5 className="card-title text-index">
@@ -125,6 +125,8 @@ const Home = () => {
                       <i className="bi bi-basket2" />
                       &nbsp;Thêm vào giỏ
                     </a>
+                  </div>
+                  <div className="text-center">
                     <NavLink className="btn btn-warning" to={"/ProductDetail"}>
                       <i className="bi bi-info-circle" />
                       &nbsp;Chi tiết
@@ -152,6 +154,8 @@ const Home = () => {
                       <i className="bi bi-basket2" />
                       &nbsp;Thêm vào giỏ
                     </a>
+                  </div>
+                  <div className="text-center">
                     <NavLink className="btn btn-warning" to={"/ProductDetail"}>
                       <i className="bi bi-info-circle" />
                       &nbsp;Chi tiết
@@ -178,6 +182,8 @@ const Home = () => {
                       <i className="bi bi-basket2" />
                       &nbsp;Thêm vào giỏ
                     </a>
+                  </div>
+                  <div className="text-center">
                     <NavLink className="btn btn-warning" to={"/ProductDetail"}>
                       <i className="bi bi-info-circle" />
                       &nbsp;Chi tiết
@@ -204,6 +210,8 @@ const Home = () => {
                       <i className="bi bi-basket2" />
                       &nbsp;Thêm vào giỏ
                     </a>
+                  </div>
+                  <div className="text-center">
                     <NavLink className="btn btn-warning" to={"/ProductDetail"}>
                       <i className="bi bi-info-circle" />
                       &nbsp;Chi tiết
@@ -239,6 +247,8 @@ const Home = () => {
                       <i className="bi bi-basket2" />
                       &nbsp;Thêm vào giỏ
                     </a>
+                  </div>
+                  <div className="text-center">
                     <NavLink className="btn btn-warning" to={"/ProductDetail"}>
                       <i className="bi bi-info-circle" />
                       &nbsp;Chi tiết
@@ -265,6 +275,8 @@ const Home = () => {
                       <i className="bi bi-basket2" />
                       &nbsp;Thêm vào giỏ
                     </a>
+                  </div>
+                  <div className="text-center">
                     <NavLink className="btn btn-warning" to={"/ProductDetail"}>
                       <i className="bi bi-info-circle" />
                       &nbsp;Chi tiết
@@ -291,6 +303,8 @@ const Home = () => {
                       <i className="bi bi-basket2" />
                       &nbsp;Thêm vào giỏ
                     </a>
+                  </div>
+                  <div className="text-center">
                     <NavLink className="btn btn-warning" to={"/ProductDetail"}>
                       <i className="bi bi-info-circle" />
                       &nbsp;Chi tiết
@@ -318,6 +332,8 @@ const Home = () => {
                       <i className="bi bi-basket2" />
                       &nbsp;Thêm vào giỏ
                     </a>
+                  </div>
+                  <div className="text-center">
                     <NavLink className="btn btn-warning" to={"/ProductDetail"}>
                       <i className="bi bi-info-circle" />
                       &nbsp;Chi tiết

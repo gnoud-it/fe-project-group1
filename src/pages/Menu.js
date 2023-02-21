@@ -1,6 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+import combo1 from "../images/combo-seller/combo-chic-1.jpg";
+import combo2 from "../images/combo-seller/combo-chic-2.jpg";
+import combo3 from "../images/combo-seller/combo-bur-1.jpg";
+import combo4 from "../images/combo-seller/combo-bur-2.jpg";
+
 const Menu = () => {
   return (
     <div>
@@ -99,11 +104,7 @@ const Menu = () => {
           <div className="row text-center">
             <div className="col-12 col-lg-3 col-md-6 pb-4">
               <div className="card h-100 shadow">
-                <img
-                  src="./images/combo-seller/combo-chic-1.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
+                <img src={combo1} className="card-img-top" alt="..." />
                 <div className="card-body border-bottom border-3 rounded border-index">
                   <h5 className="card-title text-index">
                     COMBO Gà Rán Giòn Cay (2 Miếng)
@@ -123,11 +124,7 @@ const Menu = () => {
             </div>
             <div className="col-12 col-lg-3 col-md-6 pb-4">
               <div className="card h-100 shadow">
-                <img
-                  src="./images/combo-seller/combo-chic-2.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
+                <img src={combo2} className="card-img-top" alt="..." />
                 <div className="card-body border-bottom border-3 rounded border-index">
                   <h5 className="card-title text-index">
                     COMBO Gà BBQ (2 Miếng)
@@ -147,11 +144,7 @@ const Menu = () => {
             </div>
             <div className="col-12 col-lg-3 col-md-6 pb-4">
               <div className="card h-100 shadow">
-                <img
-                  src="./images/combo-seller/combo-bur-2.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
+                <img src={combo4} className="card-img-top" alt="..." />
                 <div className="card-body border-bottom border-3 rounded border-index">
                   <h5 className="card-title text-index">
                     COMBO Burger Cá Hồi Xông Khói (2 phần)
@@ -171,11 +164,7 @@ const Menu = () => {
             </div>
             <div className="col-12 col-lg-3 col-md-6 pb-4">
               <div className="card h-100 shadow">
-                <img
-                  src="./images/combo-seller/combo-bur-1.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
+                <img src={combo3} className="card-img-top" alt="..." />
                 <div className="card-body border-bottom border-3 rounded border-index">
                   <h5 className="card-title text-index">
                     COMBO Burger Cá Hồi Xông Khói (2 miếng)
@@ -196,11 +185,7 @@ const Menu = () => {
             </div>
             <div className="col-12 col-lg-3 col-md-6 pb-4">
               <div className="card h-100 shadow">
-                <img
-                  src="./images/combo-seller/combo-chic-1.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
+                <img src={combo1} className="card-img-top" alt="..." />
                 <div className="card-body border-bottom border-3 rounded border-index">
                   <h5 className="card-title text-index">
                     COMBO Gà Rán Giòn Cay (2 Miếng)
@@ -220,11 +205,7 @@ const Menu = () => {
             </div>
             <div className="col-12 col-lg-3 col-md-6 pb-4">
               <div className="card h-100 shadow">
-                <img
-                  src="./images/combo-seller/combo-chic-2.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
+                <img src={combo2} className="card-img-top" alt="..." />
                 <div className="card-body border-bottom border-3 rounded border-index">
                   <h5 className="card-title text-index">
                     COMBO Gà BBQ (2 Miếng)
@@ -244,11 +225,7 @@ const Menu = () => {
             </div>
             <div className="col-12 col-lg-3 col-md-6 pb-4">
               <div className="card h-100 shadow">
-                <img
-                  src="./images/combo-seller/combo-bur-2.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
+                <img src={combo4} className="card-img-top" alt="..." />
                 <div className="card-body border-bottom border-3 rounded border-index">
                   <h5 className="card-title text-index">
                     COMBO Burger Cá Hồi Xông Khói (2 phần)
@@ -268,11 +245,7 @@ const Menu = () => {
             </div>
             <div className="col-12 col-lg-3 col-md-6 pb-4">
               <div className="card h-100 shadow">
-                <img
-                  src="./images/combo-seller/combo-bur-1.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
+                <img src={combo3} className="card-img-top" alt="..." />
                 <div className="card-body border-bottom border-3 rounded border-index">
                   <h5 className="card-title text-index">
                     COMBO Burger Cá Hồi Xông Khói (2 miếng)

@@ -4,3 +4,8 @@
 body {
   font-family: Verdana, sans-serif;
 }
+div#navigation {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}

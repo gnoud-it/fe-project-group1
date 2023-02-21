@@ -29,24 +29,30 @@ const ProductDetail = () => {
         <div className="container">
           <div className="container py-5">
             <div className="row">
-              <div className="col col-2 bg-light">
-                <img src={detail_pro} className="card-img-top" alt="..." />
+              <div className="col-12 col-lg-2">
+                <div className="mb-3">
+                  <img src={detail_pro} className="card-img-top" alt="..." />
+                </div>
               </div>
-              <div className="col col-6 bg-light">
-                <h3>COMBO Burger Cá Hồi Xông Khói (2 miếng)</h3>
-                <p>Buger 2 Miếng cá hồi xông khói phô mai</p>
+              <div className="col-12 col-lg-4">
+                <div className="mb-3">
+                  <h3 className="text-index">
+                    COMBO Burger Cá Hồi Xông Khói (2 miếng)
+                  </h3>
+                  <p>Buger 2 Miếng cá hồi xông khói phô mai</p>
+                </div>
               </div>
-              <div className="col col-3">
+              <div className="col-12 col-lg-6">
                 <div className="border p-3">
                   <h5>Thông tin thanh toán </h5>
                   <hr />
                   <div className="d-flex justify-content-between">
                     <p>Giá bán</p>
-                    <p className="text-danger">99.000 VNĐ</p>
+                    <p className="text-danger fw-semibold">99.000 VNĐ</p>
                   </div>
                   <hr />
-                  <p className="text-success">Có hàng</p>
-                  <button className="btn btn-warning">Mua ngay</button>
+                  <p className="text-success fw-semibold">Còn hàng</p>
+                  <button className="btn btn-index">Mua ngay</button>
                 </div>
               </div>
             </div>
