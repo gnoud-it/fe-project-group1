@@ -14,7 +14,7 @@ import sell_pro2 from "../images/combo-seller/combo-chic-2.jpg";
 import sell_pro3 from "../images/combo-seller/combo-bur-2.jpg";
 import sell_pro4 from "../images/combo-seller/combo-bur-1.jpg";
 
-const Home = () => {
+const TrangChu = () => {
   return (
     <div>
       <div id="banner">
@@ -102,12 +102,15 @@ const Home = () => {
           <div className="row text-center">
             <div className="col-12 col-lg-3 col-md-6 pb-4">
               <div className="card h-100 shadow">
-                <NavLink to={"/ProductDetail"} className="text-decoration-none">
+                <NavLink
+                  to={"/ChiTietSanPham"}
+                  className="text-decoration-none"
+                >
                   <img src={new_pro1} className="card-img-top" alt="..." />
                 </NavLink>
                 <div className="card-body border-bottom border-3 rounded border-index">
                   <NavLink
-                    to={"/ProductDetail"}
+                    to={"/ChiTietSanPham"}
                     className="text-decoration-none"
                   >
                     <h5 className="card-title text-index">
@@ -127,7 +130,7 @@ const Home = () => {
                     </a>
                   </div>
                   <div className="text-center">
-                    <NavLink className="btn btn-warning" to={"/ProductDetail"}>
+                    <NavLink className="btn btn-warning" to={"/ChiTietSanPham"}>
                       <i className="bi bi-info-circle" />
                       &nbsp;Chi tiết
                     </NavLink>
@@ -156,7 +159,7 @@ const Home = () => {
                     </a>
                   </div>
                   <div className="text-center">
-                    <NavLink className="btn btn-warning" to={"/ProductDetail"}>
+                    <NavLink className="btn btn-warning" to={"/ChiTietSanPham"}>
                       <i className="bi bi-info-circle" />
                       &nbsp;Chi tiết
                     </NavLink>
@@ -184,7 +187,7 @@ const Home = () => {
                     </a>
                   </div>
                   <div className="text-center">
-                    <NavLink className="btn btn-warning" to={"/ProductDetail"}>
+                    <NavLink className="btn btn-warning" to={"/ChiTietSanPham"}>
                       <i className="bi bi-info-circle" />
                       &nbsp;Chi tiết
                     </NavLink>
@@ -212,7 +215,7 @@ const Home = () => {
                     </a>
                   </div>
                   <div className="text-center">
-                    <NavLink className="btn btn-warning" to={"/ProductDetail"}>
+                    <NavLink className="btn btn-warning" to={"/ChiTietSanPham"}>
                       <i className="bi bi-info-circle" />
                       &nbsp;Chi tiết
                     </NavLink>
@@ -249,7 +252,7 @@ const Home = () => {
                     </a>
                   </div>
                   <div className="text-center">
-                    <NavLink className="btn btn-warning" to={"/ProductDetail"}>
+                    <NavLink className="btn btn-warning" to={"/ChiTietSanPham"}>
                       <i className="bi bi-info-circle" />
                       &nbsp;Chi tiết
                     </NavLink>
@@ -277,7 +280,7 @@ const Home = () => {
                     </a>
                   </div>
                   <div className="text-center">
-                    <NavLink className="btn btn-warning" to={"/ProductDetail"}>
+                    <NavLink className="btn btn-warning" to={"/ChiTietSanPham"}>
                       <i className="bi bi-info-circle" />
                       &nbsp;Chi tiết
                     </NavLink>
@@ -305,7 +308,7 @@ const Home = () => {
                     </a>
                   </div>
                   <div className="text-center">
-                    <NavLink className="btn btn-warning" to={"/ProductDetail"}>
+                    <NavLink className="btn btn-warning" to={"/ChiTietSanPham"}>
                       <i className="bi bi-info-circle" />
                       &nbsp;Chi tiết
                     </NavLink>
@@ -334,7 +337,7 @@ const Home = () => {
                     </a>
                   </div>
                   <div className="text-center">
-                    <NavLink className="btn btn-warning" to={"/ProductDetail"}>
+                    <NavLink className="btn btn-warning" to={"/ChiTietSanPham"}>
                       <i className="bi bi-info-circle" />
                       &nbsp;Chi tiết
                     </NavLink>
@@ -349,4 +352,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default TrangChu;

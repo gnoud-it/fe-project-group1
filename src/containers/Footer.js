@@ -91,7 +91,7 @@ const Footer = () => {
                   </button>
                 </form>
                 <div className="text-center">
-                  <NavLink to="./index">
+                  <NavLink to="./TrangChu">
                     <img
                       src={logo_footer}
                       width={250}

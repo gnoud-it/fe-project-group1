@@ -72,6 +72,13 @@ img {
   text-shadow: 2px 2px 3px #dd3c0f;
 }
 
+#bgBlog {
+  background: url(./images/bg-blog.jpg);
+  background-color: #f05123;
+  background-size: cover;
+  text-shadow: 2px 2px 3px #dd3c0f;
+}
+
 .pagination {
   --bs-pagination-padding-x: 0.75rem;
   --bs-pagination-padding-y: 0.375rem;

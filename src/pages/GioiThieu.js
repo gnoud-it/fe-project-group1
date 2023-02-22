@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Introduce = () => {
+const GioiThieu = () => {
   return (
     <div>
       <div id="breadcrum">
@@ -31,4 +31,4 @@ const Introduce = () => {
   );
 };
 
-export default Introduce;
+export default GioiThieu;

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { NavLink } from "react-router-dom";
 
@@ -6,7 +7,7 @@ import combo2 from "../images/combo-seller/combo-chic-2.jpg";
 import combo3 from "../images/combo-seller/combo-bur-1.jpg";
 import combo4 from "../images/combo-seller/combo-bur-2.jpg";
 
-const Menu = () => {
+const ThucDon = () => {
   return (
     <div>
       <div id="breadcrum">
@@ -22,7 +23,7 @@ const Menu = () => {
                 </a>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
-                Menu
+                Thực đơn
               </li>
             </ol>
           </nav>
@@ -38,7 +39,7 @@ const Menu = () => {
             className="text-white text-uppercase fw-semibold"
             style={{ letterSpacing: 2 }}
           >
-            Menu tất cả các món
+            Thực đơn tất cả các món
           </h2>
         </div>
         <div className="container">
@@ -302,4 +303,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default ThucDon;

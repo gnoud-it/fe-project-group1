@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Contact = () => {
+const LienHe = () => {
   return (
     <div>
       <div id="breadcrum">
@@ -142,4 +142,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default LienHe;

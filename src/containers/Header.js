@@ -13,7 +13,10 @@ const Header = () => {
               <div className="d-none d-lg-block d-md-block col-12 col-lg-6 col-md-8 mt-1">
                 <nav
                   aria-label="breadcrumb"
-                  style={{ bsBreadcrumbDivider: '""', marginBottom: "-15px" }}
+                  style={{
+                    bsBreadcrumbDivider: "",
+                    marginBottom: "-15px",
+                  }}
                 >
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item small">
@@ -57,7 +60,7 @@ const Header = () => {
           <div className="container">
             <div className="row d-md-flex d-lg-flex mb-2">
               <div className=" col-12 col-lg-4 col-md-5 mt-2 text-lg-start text-center">
-                <NavLink to={"/Home"}>
+                <NavLink to={"/TrangChu"}>
                   <img src={logo} className="w-50" alt="logo" />
                 </NavLink>
               </div>
@@ -96,7 +99,7 @@ const Header = () => {
             style={{ letterSpacing: 1 }}
           >
             <div className="container">
-              <NavLink className="navbar-brand" to={"/Home"}>
+              <NavLink className="navbar-brand" to={"/TrangChu"}>
                 <img src={logo_nav} alt="logo nav" width={100} height={40} />
               </NavLink>
               <button
@@ -119,14 +122,14 @@ const Header = () => {
                     <NavLink
                       className="nav-link text-white"
                       aria-current="page"
-                      to={"/Home"}
+                      to={"/TrangChu"}
                     >
                       Trang chủ
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to={"/Menu"}>
-                      Menu
+                    <NavLink className="nav-link" to={"/ThucDon"}>
+                      Thực đơn
                     </NavLink>
                   </li>
                   <li className="nav-item">
@@ -135,12 +138,12 @@ const Header = () => {
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to={"/Introduce"}>
+                    <NavLink className="nav-link" to={"/GioiThieu"}>
                       Giới thiệu
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to={"/Contact"}>
+                    <NavLink className="nav-link" to={"/LienHe"}>
                       Liên hệ
                     </NavLink>
                   </li>
