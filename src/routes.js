@@ -8,12 +8,13 @@ import NotFound from "./pages/NotFound";
 
 const routes = [
   { path: "", component: <Home /> },
-  { path: "Home", component: <Home /> },
-  { path: "Menu", component: <Menu /> },
-  { path: "Contact", component: <Contact /> },
-  { path: "Introduce", component: <Introduce /> },
-  { path: "Blog", component: <Blog /> },
-  { path: "ProductDetail", component: <ProductDetail /> },
+  { path: "fe-project-group1", component: <Home /> },
+  { path: "home", component: <Home /> },
+  { path: "menu", component: <Menu /> },
+  { path: "contact", component: <Contact /> },
+  { path: "introduce", component: <Introduce /> },
+  { path: "blog", component: <Blog /> },
+  { path: "productDetail", component: <ProductDetail /> },
   { path: "*", component: <NotFound /> },
 ];
 
