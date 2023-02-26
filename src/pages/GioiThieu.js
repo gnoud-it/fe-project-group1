@@ -6,7 +6,7 @@ const GioiThieu = () => {
    return (
       <>
          <div id="breadcrum">
-            <div className="container pt-3 t">
+            <div className="container pt-3 ">
                <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                      <li className="breadcrumb-item">
@@ -27,7 +27,7 @@ const GioiThieu = () => {
          <div className="bg-light">
             <div className="container">
                <div className="">
-                  <h4 className="fs-1">  A FEW WORDS ABOUT AS</h4>
+                  <h4 className="fs-1"> A FEW WORDS ABOUT AS</h4>
                   <p>
                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                      sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -56,7 +56,7 @@ const GioiThieu = () => {
                         width="835"
                         height="418"
                      />
-                  </div>    
+                  </div>
                </div>
             </div>
          </div>
