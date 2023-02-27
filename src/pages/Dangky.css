@@ -1,0 +1,23 @@
+#page-register input.neumorphism {
+   border-radius: 8px !important;
+   background: #e0e0e0 !important;
+
+   box-shadow: 7px -7px 14px #c3c3c3, -7px 7px 14px #fdfdfd;
+}
+#page-register input.neumorphism:focus {
+   border-radius: 8px;
+   background: #e0e0e0 !important;
+   box-shadow: inset 37px 37px 74px #c5c5c5, inset -37px -37px 74px #fbfbfb;
+}
+.btnButton {
+   border-radius: 8px !important;
+   box-shadow: 7px -7px 14px #c3c3c3, -7px 7px 14px #fdfdfd;
+}
+.btnButton:hover {
+   cursor: pointer;
+   background-color: #217093;
+ }
+ 
+ .btnButton:active {
+   transform: scale(0.98);
+ } 
