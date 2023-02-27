@@ -1,7 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { NavLink } from "react-router-dom";
-
 import combo1 from "../images/combo-seller/combo-chic-1.jpg";
 import combo2 from "../images/combo-seller/combo-chic-2.jpg";
 import combo3 from "../images/combo-seller/combo-bur-1.jpg";
@@ -16,15 +14,15 @@ const ThucDon = () => {
             <ol className="breadcrumb">
               <li className="breadcrumb-item">
                 <a
-                  href="index.html"
+                  href="/trang-chu"
                   className="text-decoration-none text-index"
                 >
                   Trang chủ
                 </a>
               </li>
-              <li className="breadcrumb-item active" aria-current="page">
-                Thực đơn
-              </li>
+              <a href="/thuc-don" className="breadcrumb-item active text-decoration-none text-index" aria-current="page">
+                Thực đơn<nav></nav>
+              </a>
             </ol>
           </nav>
         </div>
