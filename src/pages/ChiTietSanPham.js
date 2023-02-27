@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+
 
 import detail_pro from "../images/new-product/bur-new-1.jpg";
 
@@ -8,19 +8,19 @@ const ChiTietSanPham = () => {
     <div>
       <div id="breadcrum">
         <div className="container pt-3">
-          <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
               <li className="breadcrumb-item">
                 <a
-                  href="index.html"
+                  href="/trang-chu"
                   className="text-decoration-none text-index"
                 >
                   Trang chủ
                 </a>
               </li>
-              <li className="breadcrumb-item active" aria-current="page">
-                Chi Tiết Sản Phẩm
-              </li>
+              <a href="/chi-tiet-san-pham" className="breadcrumb-item active text-decoration-none text-index" aria-current="page">
+                Chi tiết sản phẩm<nav></nav>
+              </a>
             </ol>
           </nav>
         </div>

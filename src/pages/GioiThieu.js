@@ -7,21 +7,21 @@ const GioiThieu = () => {
       <>
          <div id="breadcrum">
             <div className="container pt-3 ">
-               <nav aria-label="breadcrumb">
-                  <ol className="breadcrumb">
-                     <li className="breadcrumb-item">
-                        <a
-                           href="index.html"
-                           className="text-decoration-none text-index"
-                        >
-                           Trang chủ
-                        </a>
-                     </li>
-                     <li className="breadcrumb-item active" aria-current="page">
-                        Giới Thiệu
-                     </li>
-                  </ol>
-               </nav>
+            <nav aria-label="breadcrumb">
+            <ol className="breadcrumb">
+              <li className="breadcrumb-item">
+                <a
+                  href="/trang-chu"
+                  className="text-decoration-none text-index"
+                >
+                  Trang chủ
+                </a>
+              </li>
+              <a href="/gioi-thieu" className="breadcrumb-item active text-decoration-none text-index" aria-current="page">
+               Giới thiệu<nav></nav>
+              </a>
+            </ol>
+          </nav>
             </div>
          </div>
          <div className="bg-light">

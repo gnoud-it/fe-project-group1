@@ -9,12 +9,12 @@ import KhongTimThayTrang from "./pages/KhongTimThayTrang";
 const routes = [
   { path: "", component: <TrangChu /> },
   { path: "fe-project-group1", component: <TrangChu /> },
-  { path: "TrangChu", component: <TrangChu /> },
-  { path: "ThucDon", component: <ThucDon /> },
-  { path: "LienHe", component: <LienHe /> },
-  { path: "GioiThieu", component: <GioiThieu /> },
-  { path: "Blog", component: <Blog /> },
-  { path: "ChiTietSanPham", component: <ChiTietSanPham /> },
+  { path: "trang-chu", component: <TrangChu /> },
+  { path: "thuc-don", component: <ThucDon /> },
+  { path: "lien-he", component: <LienHe /> },
+  { path: "gioi-thieu", component: <GioiThieu /> },
+  { path: "blog", component: <Blog /> },
+  { path: "chi-tiet-san-pham", component: <ChiTietSanPham /> },
   { path: "*", component: <KhongTimThayTrang /> },
 ];
 
