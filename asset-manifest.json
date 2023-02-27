@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/fe-project-group1/static/css/main.f7daa430.css",
+    "main.js": "/fe-project-group1/static/js/main.d1391a5e.js",
+    "static/js/787.ad4e24af.chunk.js": "/fe-project-group1/static/js/787.ad4e24af.chunk.js",
+    "static/media/banner1.jpg": "/fe-project-group1/static/media/banner1.27606d2f35f24d03125a.jpg",
+    "static/media/banner3.jpg": "/fe-project-group1/static/media/banner3.03d7665ee849c4d98772.jpg",
+    "static/media/bg.jpg": "/fe-project-group1/static/media/bg.86bc840e5c8cfde1e882.jpg",
+    "static/media/banner2.jpg": "/fe-project-group1/static/media/banner2.0680a5d214500cd0b938.jpg",
+    "static/media/bootstrap-icons.woff?": "/fe-project-group1/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
+    "static/media/logo-footer.png": "/fe-project-group1/static/media/logo-footer.0bc8c899264521527d0e.png",
+    "static/media/combo-bur-2.jpg": "/fe-project-group1/static/media/combo-bur-2.745c94b259ca498b95f5.jpg",
+    "static/media/logo-nav.png": "/fe-project-group1/static/media/logo-nav.9a1918b5f5a8cd38f2d7.png",
+    "static/media/logo.png": "/fe-project-group1/static/media/logo.8a5565c271dd45a67089.png",
+    "static/media/bootstrap-icons.woff2?": "/fe-project-group1/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
+    "static/media/combo-chic-1.jpg": "/fe-project-group1/static/media/combo-chic-1.6acf7788633e7793f629.jpg",
+    "static/media/combo-chic-2.jpg": "/fe-project-group1/static/media/combo-chic-2.988a96b89089bf43a778.jpg",
+    "static/media/combo-bur-1.jpg": "/fe-project-group1/static/media/combo-bur-1.fd29e0abe1dfbe9363bf.jpg",
+    "static/media/chic-new-2.jpg": "/fe-project-group1/static/media/chic-new-2.b51e4c4c076b4a9dc23f.jpg",
+    "static/media/chic-new-1.jpg": "/fe-project-group1/static/media/chic-new-1.00b219aa120c2ca97c21.jpg",
+    "static/media/bur-new-2.jpg": "/fe-project-group1/static/media/bur-new-2.66a240cf8324762218ef.jpg",
+    "static/media/bur-new-1.jpg": "/fe-project-group1/static/media/bur-new-1.19e39d5e2c68a7adaa0a.jpg",
+    "index.html": "/fe-project-group1/index.html",
+    "main.f7daa430.css.map": "/fe-project-group1/static/css/main.f7daa430.css.map",
+    "main.d1391a5e.js.map": "/fe-project-group1/static/js/main.d1391a5e.js.map",
+    "787.ad4e24af.chunk.js.map": "/fe-project-group1/static/js/787.ad4e24af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7daa430.css",
+    "static/js/main.d1391a5e.js"
+  ]
+}
