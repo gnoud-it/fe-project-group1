@@ -5,6 +5,7 @@ import GioiThieu from "./pages/GioiThieu";
 import Blog from "./pages/Blog";
 import ChiTietSanPham from "./pages/ChiTietSanPham";
 import KhongTimThayTrang from "./pages/KhongTimThayTrang";
+import DangNhap from "./pages/DangNhap";
 
 const routes = [
   { path: "", component: <TrangChu /> },
@@ -16,6 +17,8 @@ const routes = [
   { path: "blog", component: <Blog /> },
   { path: "chi-tiet-san-pham", component: <ChiTietSanPham /> },
   { path: "*", component: <KhongTimThayTrang /> },
+  { path: "dang-nhap", component: <DangNhap/> },
+
 ];
 
 export default routes;

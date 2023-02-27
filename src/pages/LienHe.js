@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
 
-
 const LienHe = () => {
    return (
       <div>
@@ -17,15 +16,13 @@ const LienHe = () => {
                            Trang chủ
                         </a>
                      </li>
-                     <li>
-                        <a
-                           href="/lien-he"
-                           className="breadcrumb-item active text-decoration-none text-index"
-                           aria-current="page"
-                        >
-                           Liên hệ<nav></nav>
-                        </a>
-                     </li>
+                     <a
+                        href="/lien-he"
+                        className="breadcrumb-item active text-decoration-none text-index"
+                        aria-current="page"
+                     >
+                        Liên hệ
+                     </a>
                   </ol>
                </nav>
             </div>
