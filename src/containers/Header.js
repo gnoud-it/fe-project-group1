@@ -1,8 +1,8 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../images/logo.png";
 import logo_nav from "../images/logo-nav.png";
-import "../App.css";
+
 const Header = () => {
   return (
     <div>
@@ -45,8 +45,18 @@ const Header = () => {
               </div>
               <div className="col-12 col-lg-6 col-md-4 mt-1">
                 <h6 className="text-white float-start small pe-2 float-end">
-                  <NavLink href="#" className="text-decoration-none text-index">
-                    Đăng ký / Đăng nhập
+                  <NavLink
+                    to={"/DangKy"}
+                    className="text-decoration-none text-index"
+                  >
+                    Đăng ký
+                  </NavLink>
+                  <a>&nbsp;/&nbsp;</a>
+                  <NavLink
+                    to={"/DangNhap"}
+                    className="text-decoration-none text-index"
+                  >
+                    Đăng nhập
                   </NavLink>
                 </h6>
               </div>
@@ -57,10 +67,10 @@ const Header = () => {
 
       <div id="header" className="bg-light">
         <div className="container-fluid">
-          <div className="container ">
+          <div className="container">
             <div className="row d-md-flex d-lg-flex mb-2">
               <div className=" col-12 col-lg-4 col-md-5 mt-2 text-lg-start text-center">
-                <NavLink to={"/trang-chu"}>
+                <NavLink to={"/TrangChu"}>
                   <img src={logo} className="w-50" alt="logo" />
                 </NavLink>
               </div>
@@ -98,8 +108,8 @@ const Header = () => {
             className="navbar navbar-expand-lg navbar bg-index shadow-sm"
             style={{ letterSpacing: 1 }}
           >
-            <div className="container" style={{ fontSize: "15px" }}>
-              <NavLink className="navbar-brand" to={"/trang-chu"}>
+            <div className="container">
+              <NavLink className="navbar-brand" to={"/TrangChu"}>
                 <img src={logo_nav} alt="logo nav" width={100} height={40} />
               </NavLink>
               <button
@@ -120,30 +130,30 @@ const Header = () => {
                 <ul className="navbar-nav fw-semibold">
                   <li className="nav-item active">
                     <NavLink
-                      className="nav-link  "
+                      className="nav-link text-white"
                       aria-current="page"
-                      to={"/trang-chu"}
+                      to={"/TrangChu"}
                     >
                       Trang chủ
                     </NavLink>
                   </li>
-                  <li className="nav-item active">
-                    <NavLink className="nav-link" to={"/thuc-don"}>
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to={"/ThucDon"}>
                       Thực đơn
                     </NavLink>
                   </li>
-                  <li className="nav-item active">
-                    <NavLink className="nav-link" to={"/blog"}>
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to={"/Blog"}>
                       Blog
                     </NavLink>
                   </li>
-                  <li className="nav-item active">
-                    <NavLink className="nav-link" to={"/gioi-thieu"}>
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to={"/GioiThieu"}>
                       Giới thiệu
                     </NavLink>
                   </li>
-                  <li className="nav-item active">
-                    <NavLink className="nav-link" to={"/lien-he"}>
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to={"/LienHe"}>
                       Liên hệ
                     </NavLink>
                   </li>

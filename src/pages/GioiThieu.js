@@ -10,15 +10,12 @@ const GioiThieu = () => {
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
               <li className="breadcrumb-item">
-                <a
-                  href="/trang-chu"
-                  className="text-decoration-none text-index"
-                >
+                <a href="/TrangChu" className="text-decoration-none text-index">
                   Trang chủ
                 </a>
               </li>
               <a
-                href="/gioi-thieu"
+                href="#"
                 className="breadcrumb-item active text-decoration-none text-index"
                 aria-current="page"
               >

@@ -26,13 +26,13 @@ const ChiTietSanPham = () => {
                   Thực đơn
                 </NavLink>
               </li>
-              <a
-                href="/chi-tiet-san-pham"
+              <NavLink
+                to={"/ChiTietSanPham"}
                 className="breadcrumb-item active text-decoration-none text-index"
                 aria-current="page"
               >
                 Chi tiết sản phẩm<nav></nav>
-              </a>
+              </NavLink>
             </ol>
           </nav>
         </div>
