@@ -103,14 +103,14 @@ const TrangChu = () => {
             <div className="col-12 col-lg-3 col-md-6 pb-4">
               <div className="card h-100 shadow">
                 <NavLink
-                  to={"/ChiTietSanPham"}
+                  to={"/chi-tiet-san-pham"}
                   className="text-decoration-none"
                 >
                   <img src={new_pro1} className="card-img-top" alt="..." />
                 </NavLink>
                 <div className="card-body border-bottom border-3 rounded border-index">
                   <NavLink
-                    to={"/ChiTietSanPham"}
+                    to={"/chi-tiet-san-pham"}
                     className="text-decoration-none"
                   >
                     <h5 className="card-title text-index">
@@ -124,13 +124,13 @@ const TrangChu = () => {
                     </h6>
                   </NavLink>
                   <div className="text-center">
-                    <a className="btn btn-index mb-2" href="#">
+                    <a className="btn btn-index mb-2" href="/#">
                       <i className="bi bi-basket2" />
                       &nbsp;Thêm vào giỏ
                     </a>
                   </div>
                   <div className="text-center">
-                    <NavLink className="btn btn-warning" to={"/ChiTietSanPham"}>
+                    <NavLink className="btn btn-warning" to={"/chi-tiet-san-pham"}>
                       <i className="bi bi-info-circle" />
                       &nbsp;Chi tiết
                     </NavLink>
@@ -153,7 +153,7 @@ const TrangChu = () => {
                     79,000 VND
                   </h6>
                   <div className="text-center">
-                    <a className="btn btn-index mb-2" href="#">
+                    <a className="btn btn-index mb-2" href="/#">
                       <i className="bi bi-basket2" />
                       &nbsp;Thêm vào giỏ
                     </a>
@@ -181,7 +181,7 @@ const TrangChu = () => {
                     90,000 VND
                   </h6>
                   <div className="text-center">
-                    <a className="btn btn-index mb-2" href="#">
+                    <a className="btn btn-index mb-2" href="/#">
                       <i className="bi bi-basket2" />
                       &nbsp;Thêm vào giỏ
                     </a>
@@ -209,7 +209,7 @@ const TrangChu = () => {
                     119,000 VND
                   </h6>
                   <div className="text-center">
-                    <a className="btn btn-index mb-2" href="#">
+                    <a className="btn btn-index mb-2" href="/#">
                       <i className="bi bi-basket2" />
                       &nbsp;Thêm vào giỏ
                     </a>
@@ -246,7 +246,7 @@ const TrangChu = () => {
                     90,000 VND
                   </h6>
                   <div className="text-center">
-                    <a className="btn btn-index mb-2" href="#">
+                    <a className="btn btn-index mb-2" href="/#">
                       <i className="bi bi-basket2" />
                       &nbsp;Thêm vào giỏ
                     </a>
@@ -274,7 +274,7 @@ const TrangChu = () => {
                     119,000 VND
                   </h6>
                   <div className="text-center">
-                    <a className="btn btn-index mb-2" href="#">
+                    <a className="btn btn-index mb-2" href="/#">
                       <i className="bi bi-basket2" />
                       &nbsp;Thêm vào giỏ
                     </a>
@@ -302,7 +302,7 @@ const TrangChu = () => {
                     169,000 VND
                   </h6>
                   <div className="text-center">
-                    <a className="btn btn-index mb-2" href="#">
+                    <a className="btn btn-index mb-2" href="/#">
                       <i className="bi bi-basket2" />
                       &nbsp;Thêm vào giỏ
                     </a>
@@ -331,7 +331,7 @@ const TrangChu = () => {
                     109,000 VND
                   </h6>
                   <div className="text-center">
-                    <a className="btn btn-index mb-2" href="#">
+                    <a className="btn btn-index mb-2" href="/#">
                       <i className="bi bi-basket2" />
                       &nbsp;Thêm vào giỏ
                     </a>

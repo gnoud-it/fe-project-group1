@@ -1,7 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 import detail_pro from "../images/new-product/bur-new-1.jpg";
+import { NavLink } from "react-router-dom";
 
 const ChiTietSanPham = () => {
   return (
@@ -26,9 +26,13 @@ const ChiTietSanPham = () => {
                   Thực đơn
                 </NavLink>
               </li>
-              <li className="breadcrumb-item active" aria-current="page">
-                Chi Tiết Sản Phẩm
-              </li>
+              <a
+                href="/chi-tiet-san-pham"
+                className="breadcrumb-item active text-decoration-none text-index"
+                aria-current="page"
+              >
+                Chi tiết sản phẩm<nav></nav>
+              </a>
             </ol>
           </nav>
         </div>

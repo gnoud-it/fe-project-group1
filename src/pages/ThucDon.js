@@ -28,16 +28,16 @@ const ThucDon = () => {
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
               <li className="breadcrumb-item">
-                <NavLink
-                  to={"/TrangChu"}
+                <a
+                  href="index.html"
                   className="text-decoration-none text-index"
                 >
                   Trang chủ
                 </NavLink>
               </li>
-              <li className="breadcrumb-item active" aria-current="page">
-                Thực đơn
-              </li>
+              <a href="/thuc-don" className="breadcrumb-item active text-decoration-none text-index" aria-current="page">
+                Thực đơn<nav></nav>
+              </a>
             </ol>
           </nav>
         </div>

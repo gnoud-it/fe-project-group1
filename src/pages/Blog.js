@@ -1,9 +1,10 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+
 import blog1 from "../images/blog/blog1.jpg";
 import blog2 from "../images/blog/blog2.jpg";
 import blog3 from "../images/blog/blog3.jpg";
 import blog4 from "../images/blog/blog4.jpg";
+import { NavLink } from "react-router-dom";
 
 const Contact = () => {
   return (

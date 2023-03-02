@@ -41,7 +41,7 @@ const GioiThieu = () => {
             Giới Thiệu Về Cửa Hàng Của Chúng Tôi
           </h2>
         </div>
-        <div className="container pb-5">
+        <div className="container">
           <div className="">
             <p
               className="fst-italic"
