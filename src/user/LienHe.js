@@ -10,7 +10,7 @@ const LienHe = () => {
             <ol className="breadcrumb">
               <li className="breadcrumb-item">
                 <NavLink
-                  to={"/TrangChu"}
+                  to={"/user/TrangChu"}
                   className="text-decoration-none text-index"
                 >
                   Trang chủ

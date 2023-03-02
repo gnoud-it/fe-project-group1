@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" href="%PUBLIC_URL%/fav_logo.png" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MANGO FOOD</title>
   <!-- STYLE CSS -->
   <link href="%PUBLIC_URL%/index.css" rel="stylesheet" type="text/css" media="all" />
   <!-- FAV ICON -->
+  <link rel="icon" href="%PUBLIC_URL%/fav_logo.png" />
   <!-- BOOTSTRAP -->
   <link href="%PUBLIC_URL%/bootstrap.min.css" rel="stylesheet" />
   <link href="%PUBLIC_URL%/bootstrap-icons.css" rel="stylesheet" />
@@ -26,7 +26,7 @@
   </script>
 </head>
 
-<body class="bg-light">
+<body class="bg-light" onload="initClock()">
   <div id="root"></div>
   <!--
       This HTML file is a template.
@@ -51,7 +51,52 @@
       $().UItoTop({ easingType: 'smooth' });
     });
   </script>
-  <!-- <script src="%PUBLIC_URL%/bootstrap.bundle.min.js"></script> -->
+  <script type="text/javascript">
+    function updateClock() {
+      var now = new Date();
+      var dname = now.getDay(),
+        mo = now.getMonth(),
+        dnum = now.getDate(),
+        yr = now.getFullYear(),
+        hou = now.getHours(),
+        min = now.getMinutes(),
+        sec = now.getSeconds(),
+        pe = "AM";
+
+      if (hou >= 12) {
+        pe = "PM";
+      }
+      if (hou == 0) {
+        hou = 12;
+      }
+      if (hou > 12) {
+        hou = hou - 12;
+      }
+
+      Number.prototype.pad = function (digits) {
+        for (var n = this.toString(); n.length < digits; n = 0 + n);
+        return n;
+      }
+
+      var months = ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9",
+        "Tháng 10",
+        "Tháng 11", "Tháng 12"
+      ];
+      var week = ["Chủ nhật", "Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7"];
+      var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+      var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
+      for (var i = 0; i < ids.length; i++)
+        document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+    }
+
+    function initClock() {
+      updateClock();
+      window.setInterval("updateClock()", 1);
+    }
+  </script>
+
+  <script src="%PUBLIC_URL%/bootstrap.bundle.min.js" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

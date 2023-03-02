@@ -29,7 +29,7 @@ const ThucDon = () => {
             <ol className="breadcrumb">
               <li className="breadcrumb-item">
                 <NavLink
-                  to={"/TrangChu"}
+                  to={"/user/TrangChu"}
                   className="text-decoration-none text-index"
                 >
                   Trang chủ
@@ -121,7 +121,7 @@ const ThucDon = () => {
                 <div className="col-12 col-lg-3 col-md-6 pb-4" key={product.id}>
                   <div className="card h-100 shadow">
                     <NavLink
-                      to={`${product.id}`}
+                      to={"/user/ChiTietSanPham"}
                       className="text-decoration-none"
                     >
                       <img
@@ -136,7 +136,7 @@ const ThucDon = () => {
                         {product.description}
                       </h6>
                       <h6 className="card-title text-danger fw-bold pt-2 pb-3 fs-5">
-                        {product.price} ₫
+                        {product.price} VND
                       </h6>
                       <a className="btn btn-index">
                         <i className="bi bi-basket2" />

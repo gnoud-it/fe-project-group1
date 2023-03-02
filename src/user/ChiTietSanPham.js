@@ -12,15 +12,15 @@ const ChiTietSanPham = () => {
             <ol className="breadcrumb">
               <li className="breadcrumb-item">
                 <NavLink
-                  to={"/TrangChu"}
+                  to={"/user/TrangChu"}
                   className="text-decoration-none text-index"
                 >
                   Trang chủ
                 </NavLink>
               </li>
-              <li className="breadcrumb-item active" aria-current="page">
+              <li className="breadcrumb-item">
                 <NavLink
-                  to={"/ThucDon"}
+                  to={"/user/ThucDon"}
                   className="text-decoration-none text-index"
                 >
                   Thực đơn

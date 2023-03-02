@@ -1,0 +1,20 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "COMBO Gà Rán Giòn Cay (2 Miếng)",
+      "price": "123",
+      "description": "123",
+      "image": "https://i.imgur.com/wj6bIjP.jpg"
+    }
+  ],
+  "user_api": [
+    {
+      "name": "admin",
+      "email": "d.nguyn88@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "id": 1
+    }
+  ]
+}

@@ -1,16 +1,16 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import routes from "../routes";
-import Header from "./Header";
-import Footer from "./Footer";
+import routes from "../../routes";
+import HeaderUser from "./Header";
+import Footer from "../Footer";
 
-import sell_pro1 from "../images/combo-seller/combo-bur-1.jpg";
-import sell_pro2 from "../images/combo-seller/combo-chic-1.jpg";
+import sell_pro1 from "../../images/combo-seller/combo-bur-1.jpg";
+import sell_pro2 from "../../images/combo-seller/combo-chic-1.jpg";
 
 const DefaultLayout = () => {
   return (
     <>
-      <Header />
+      <HeaderUser />
       <Routes>
         {routes.map((route, idx) => (
           <Route key={idx} path={route.path} element={route.component} />
