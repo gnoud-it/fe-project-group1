@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
-import { delItem } from "../redux/action";
-import { addCart } from "../redux/action";
-import { Link } from "react-router-dom";
 
 const ChiTietSanPham = () => {
   let componentMounted = true;
@@ -69,12 +64,12 @@ const ChiTietSanPham = () => {
         <div className="container">
           <div className="container py-5">
             <div className="row">
-              <div className="col-12 col-lg-2">
+              <div className="col-12 col-lg-4">
                 <div className="mb-3">
-                  <img src={product.image} className="card-img-top" alt="..." />
+                  <img src={product.image} className="card-img" alt="..." />
                 </div>
               </div>
-              <div className="col-12 col-lg-4">
+              <div className="col-12 col-lg-8">
                 <div className="mb-3">
                   <h3 className="text-index">{product.name}</h3>
                   <p>{product.description}</p>
@@ -84,80 +79,29 @@ const ChiTietSanPham = () => {
                       Còn hàng
                     </span>
                   </h5>
-                </div>
-              </div>
-              <div className="col-12 col-lg-6">
-                <div className="border p-3">
-                  <h5>Thông tin thanh toán </h5>
-                  <hr />
-                  <div className="row mb-3">
-                    <label
-                      htmlFor="colFormLabelSm"
-                      className="col-sm-2 col-form-label col-form-label-sm"
-                    >
-                      Họ và tên
-                    </label>
-                    <div className="col-sm-10">
-                      <input
-                        type="email"
-                        className="form-control form-control-sm"
-                        id="colFormLabelSm"
-                        placeholder=""
-                      />
-                    </div>
-                  </div>
+                  <hr className="w-75"></hr>
 
-                  <div className="row mb-3">
-                    <label
-                      htmlFor="colFormLabelSm"
-                      className="col-sm-2 col-form-label col-form-label-sm"
-                    >
-                      Địa chỉ
-                    </label>
-                    <div className="col-sm-10">
-                      <input
-                        type="email"
-                        className="form-control form-control-sm"
-                        id="colFormLabelSm"
-                        placeholder=""
-                      />
-                    </div>
+                  <div className="my-3">
+                    <label className="form-label">Số lượng:</label>
+                    <input
+                      className="form-control"
+                      style={{ width: "8%" }}
+                      type={"number"}
+                      min={1}
+                      max={10}
+                    ></input>
                   </div>
+                  <hr className="w-75"></hr>
 
-                  <div className="row mb-3">
-                    <label
-                      htmlFor="colFormLabelSm"
-                      className="col-sm-2 col-form-label col-form-label-sm"
-                    >
-                      Số điện thoại
-                    </label>
-                    <div className="col-sm-6">
-                      <input
-                        type="email"
-                        className="form-control form-control-sm"
-                        id="colFormLabelSm"
-                        placeholder=""
-                      />
-                    </div>
-                    <label
-                      htmlFor="colFormLabelSm"
-                      className="col-sm-2 col-form-label col-form-label-sm"
-                    >
-                      Số lượng
-                    </label>
-                    <div className="col-sm-2">
-                      <input
-                        type="number"
-                        className="form-control form-control-sm"
-                        id="colFormLabelSm"
-                        min={1}
-                        max={10}
-                      />
-                    </div>
-                  </div>
-
-                  <hr />
-                  <button className="btn btn-index">Đặt hàng</button>
+                  <NavLink
+                    to={"/user/ThanhToan"}
+                    className="btn btn-index mt-2"
+                  >
+                    Thanh toán
+                  </NavLink>
+                  <button className="btn btn-warning ms-3 mt-2">
+                    Thêm vào giỏ hàng
+                  </button>
                 </div>
               </div>
             </div>

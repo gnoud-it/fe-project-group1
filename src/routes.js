@@ -17,6 +17,7 @@ import QuanLyKH from "./admin/QuanLyKH";
 import ThemSP from "./admin/ThemSP";
 import DonHang from "./admin/DonHang";
 import SuaSP from "./admin/SuaSP";
+import ThanhToan from "./user/ThanhToan";
 
 const routes = [
   { path: "", component: <TrangChu /> },
@@ -26,6 +27,7 @@ const routes = [
   { path: "LienHe", component: <LienHe /> },
   { path: "GioiThieu", component: <GioiThieu /> },
   { path: "Blog", component: <Blog /> },
+  { path: "ThanhToan", component: <ThanhToan /> },
   { path: "ThucDon/:id", component: <ChiTietSanPham /> },
   { path: "DangNhap", component: <DangNhap /> },
   { path: "DangKy", component: <DangKy /> },
