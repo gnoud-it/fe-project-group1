@@ -40,37 +40,41 @@ const QuanLyKH = () => {
           <div className="col">
             <div className="card">
               <div className="card-header fw-semibold">Quản lý khách hàng</div>
-              {data.map((item) => (
-                <div className="card m-3">
-                  <div className="row g-0">
-                    <div className="col-2 text-center fs-1 bg-light text-index rounded-1 pt-5">
-                      <i className="bi bi-people-fill" />
-                    </div>
-                    <div className="col-10">
-                      <div className="card-body">
-                        <h5 className="card-title text-index">
-                          {item.name}
-                          <span>(#{item.id})</span>
-                        </h5>
-                        <p className="card-text">{item.email}</p>
-                        <div>
-                          <button
-                            type="button"
-                            className="btn btn-index"
-                            data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"
-                          >
-                            <small>
-                              Xoá người dùng&nbsp;
-                              <i className="bi bi-trash" />
-                            </small>
-                          </button>
+              <div class="row">
+                {data.map((item) => (
+                  <div class="col-sm-6">
+                    <div className="card m-3">
+                      <div className="row g-0">
+                        <div className="col-2 text-center fs-1 bg-light text-index rounded-1 pt-5">
+                          <i className="bi bi-people-fill" />
+                        </div>
+                        <div className="col-10">
+                          <div className="card-body">
+                            <h5 className="card-title text-index">
+                              {item.name}
+                              <span>(#{item.id})</span>
+                            </h5>
+                            <p className="card-text">{item.email}</p>
+                            <div>
+                              <button
+                                type="button"
+                                className="btn btn-index"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                              >
+                                <small>
+                                  Xoá người dùng&nbsp;
+                                  <i className="bi bi-trash" />
+                                </small>
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>

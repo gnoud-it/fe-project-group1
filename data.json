@@ -1,20 +1,132 @@
 {
   "product": [
     {
-      "id": 1,
+      "id": 3,
+      "name": "COMBO Burger Cá Hồi Xông Khói (2 miếng)",
+      "price": "99,000",
+      "description": "Burger 2 Miếng cá hồi xông khói phô mai",
+      "image": "https://i.imgur.com/V3F3NOA.jpg"
+    },
+    {
+      "id": 4,
+      "name": "COMBO Gà BBQ (2 Miếng)",
+      "price": "119,000",
+      "description": "1 Nước (M) + 1 Khoai Tây Chiên (M) + 3 Miếng gà rán giòn cay",
+      "image": "https://i.imgur.com/qTWcpWv.jpg"
+    },
+    {
+      "id": 5,
       "name": "COMBO Gà Rán Giòn Cay (2 Miếng)",
-      "price": "123",
-      "description": "123",
-      "image": "https://i.imgur.com/wj6bIjP.jpg"
+      "price": "119,000",
+      "description": "1 Nước (M) + 1 Khoai Tây Chiên (M) + 3 Miếng gà rán giòn cay",
+      "image": "https://i.imgur.com/qTWcpWv.jpg"
+    },
+    {
+      "id": 6,
+      "name": "COMBO Gà Rán Giòn Cay",
+      "price": "55,000",
+      "description": "1 Nước (M) + 1 Khoai Tây (M) + 1 Miếng gà rán giòn cay",
+      "image": "https://i.imgur.com/suJKuPu.jpg"
+    },
+    {
+      "id": 7,
+      "name": "COMBO Khoai Tây Chiên Sốt Phô Mai",
+      "price": "69,000",
+      "description": "1 Khoai Tây Chiên Sốt Phô Mai (L)",
+      "image": "https://i.imgur.com/uuf9PiA.jpg"
+    },
+    {
+      "id": 8,
+      "name": "COMBO Gà BBQ (3 Miếng)",
+      "price": "119,000",
+      "description": "3 Nước (M) + 1 Khoai Tây Chiên (M) + 3 Miếng gà BBQ",
+      "image": "https://i.imgur.com/6aL9DFE.jpg"
+    },
+    {
+      "id": 9,
+      "name": "COMBO Gà Rán Giòn Cay (2 Miếng)",
+      "price": "119,000",
+      "description": "1 Nước (M) + 1 Khoai Tây Chiên (M) + 3 Miếng gà rán giòn cay",
+      "image": "https://i.imgur.com/qTWcpWv.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Khoai Tây Chiên Size L",
+      "price": "39,000",
+      "description": "1 Nước (M) + 1 Khoai Tây (L)",
+      "image": "https://i.imgur.com/jAbawYk.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Nước Trái Cây Hương Cam",
+      "price": "39,000",
+      "description": "1 Nước Trái Cây Hương Cam",
+      "image": "https://i.imgur.com/VxFw0Kl.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Nước Ngọt Lon CocaCola",
+      "price": "39,000",
+      "description": "1 Nước CocaCola",
+      "image": "https://i.imgur.com/YJhGDgn.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Nước Ngọt Chai Sprite",
+      "price": "39,000",
+      "description": "1 Nước Ngọt Chai Sprite",
+      "image": "https://i.imgur.com/El6jkSy.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Nước Ngọt Chai Fanta Cam",
+      "price": "39,000",
+      "description": "1 Nước Ngọt Chai Fanta Cam",
+      "image": "https://i.imgur.com/ABYmVC4.jpg"
     }
   ],
   "user_api": [
     {
-      "name": "admin",
-      "email": "d.nguyn88@gmail.com",
+      "name": "Hung",
+      "email": "hung@gmail.com",
       "password": "123456789",
       "confirmPassword": "123456789",
-      "id": 1
+      "id": 3
+    },
+    {
+      "name": "Trang",
+      "email": "trang@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "id": 4
+    },
+    {
+      "name": "Huyen",
+      "email": "huyen@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "id": 5
+    },
+    {
+      "name": "Ly",
+      "email": "ly@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "id": 6
+    },
+    {
+      "name": "Thao",
+      "email": "thao@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "id": 7
+    },
+    {
+      "name": "Diem",
+      "email": "diem@gmail.com",
+      "password": "123456879",
+      "confirmPassword": "123456879",
+      "id": 8
     }
   ]
 }

@@ -1,11 +1,41 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import { addCart, delItem } from "../redux/action";
 
 const ThucDon = () => {
-  let componentMounted = true;
+  var total = 0;
+  // const state = useSelector((state) => state.handleCart);
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState(data);
+  let componentMounted = true;
+  // const dispatch = useDispatch();
+  // const handleClose = (items) => {
+  //   dispatch(delItem(items));
+  // };
+  // const [cartQuantities, setCartQuantities] = useState({});
+  // const defaultQuantity = 1;
+
+  // const handleIncrement = (cartItem) => {
+  //   const newQuantities = { ...cartQuantities };
+  //   newQuantities[cartItem.id] =
+  //     (newQuantities[cartItem.id] || defaultQuantity) + 1;
+  //   setCartQuantities(newQuantities);
+  // };
+
+  // const handleDecrement = (cartItem) => {
+  //   const newQuantities = { ...cartQuantities };
+  //   newQuantities[cartItem.id] = Math.max(
+  //     (newQuantities[cartItem.id] || defaultQuantity) - 1,
+  //     0
+  //   );
+  //   setCartQuantities(newQuantities);
+  // };
+
+  // const addProduct = (product) => {
+  //   dispatch(addCart(product));
+  // };
 
   useEffect(() => {
     const getsProducts = async () => {
@@ -121,7 +151,7 @@ const ThucDon = () => {
                 <div className="col-12 col-lg-3 col-md-6 pb-4" key={product.id}>
                   <div className="card h-100 shadow">
                     <NavLink
-                      to={"/user/ChiTietSanPham"}
+                      to={`${product.id}`}
                       className="text-decoration-none"
                     >
                       <img

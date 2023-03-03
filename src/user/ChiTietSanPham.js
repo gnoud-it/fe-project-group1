@@ -1,9 +1,41 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-
-import detail_pro from "../images/new-product/bur-new-1.jpg";
+import React, { useEffect, useState } from "react";
+import { NavLink, useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+import { delItem } from "../redux/action";
+import { addCart } from "../redux/action";
+import { Link } from "react-router-dom";
 
 const ChiTietSanPham = () => {
+  let componentMounted = true;
+  const [data, setData] = useState([]);
+  const [filter, setFilter] = useState(data);
+
+  useEffect(() => {
+    const getsProducts = async () => {
+      const response = await fetch("http://localhost:3000/product");
+      if (componentMounted) {
+        setData(await response.clone().json());
+        setFilter(await response.json());
+      }
+
+      return () => {
+        componentMounted = false;
+      };
+    };
+    getsProducts();
+  }, []);
+
+  const { id } = useParams();
+  const [product, setProduct] = useState([]);
+
+  useEffect(() => {
+    const getProduct = async () => {
+      const response = await fetch(`http://localhost:3000/product/${id}`);
+      setProduct(await response.json());
+    };
+    getProduct();
+  }, []);
   return (
     <div>
       <div id="breadcrum">
@@ -39,17 +71,15 @@ const ChiTietSanPham = () => {
             <div className="row">
               <div className="col-12 col-lg-2">
                 <div className="mb-3">
-                  <img src={detail_pro} className="card-img-top" alt="..." />
+                  <img src={product.image} className="card-img-top" alt="..." />
                 </div>
               </div>
               <div className="col-12 col-lg-4">
                 <div className="mb-3">
-                  <h3 className="text-index">
-                    COMBO Burger Cá Hồi Xông Khói (2 miếng)
-                  </h3>
-                  <p>Buger 2 Miếng cá hồi xông khói phô mai</p>
+                  <h3 className="text-index">{product.name}</h3>
+                  <p>{product.description}</p>
                   <h5 className="text-danger">
-                    99.000đ -{" "}
+                    {product.price} ₫ -{" "}
                     <span className="text-success fst-italic fs-6">
                       Còn hàng
                     </span>

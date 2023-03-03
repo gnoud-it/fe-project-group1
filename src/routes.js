@@ -1,13 +1,13 @@
 //USER
-import TrangChu from "./pages/TrangChu";
-import ThucDon from "./pages/ThucDon";
-import LienHe from "./pages/LienHe";
-import GioiThieu from "./pages/GioiThieu";
-import Blog from "./pages/Blog";
-import ChiTietSanPham from "./pages/ChiTietSanPham";
+import TrangChu from "./user/TrangChu";
+import ThucDon from "./user/ThucDon";
+import LienHe from "./user/LienHe";
+import GioiThieu from "./user/GioiThieu";
+import Blog from "./user/Blog";
+import ChiTietSanPham from "./user/ChiTietSanPham";
 import DangNhap from "./pages/DangNhap";
 import DangKy from "./pages/DangKy";
-import KhongTimThayTrang from "./pages/KhongTimThayTrang";
+import KhongTimThayTrang from "./user/KhongTimThayTrang";
 
 //ADMIN
 import Home from "./admin/Home";
@@ -16,7 +16,6 @@ import QuanLySP from "./admin/QuanLySP";
 import QuanLyKH from "./admin/QuanLyKH";
 import ThemSP from "./admin/ThemSP";
 import DonHang from "./admin/DonHang";
-import ThongTinKH from "./admin/ThongTinKH";
 import SuaSP from "./admin/SuaSP";
 
 const routes = [
@@ -27,7 +26,7 @@ const routes = [
   { path: "LienHe", component: <LienHe /> },
   { path: "GioiThieu", component: <GioiThieu /> },
   { path: "Blog", component: <Blog /> },
-  { path: "ChiTietSanPham", component: <ChiTietSanPham /> },
+  { path: "ThucDon/:id", component: <ChiTietSanPham /> },
   { path: "DangNhap", component: <DangNhap /> },
   { path: "DangKy", component: <DangKy /> },
   { path: "*", component: <KhongTimThayTrang /> },
@@ -38,7 +37,6 @@ const routes = [
   { path: "Login", component: <Login /> },
   { path: "QuanLySP", component: <QuanLySP /> },
   { path: "QuanLyKH", component: <QuanLyKH /> },
-  { path: "ThongTinKH", component: <ThongTinKH /> },
   { path: "ThemSP", component: <ThemSP /> },
   { path: "SuaSP", component: <SuaSP /> },
   { path: "DonHang", component: <DonHang /> },
